@@ -1,0 +1,52 @@
+<!-- @dsCard height=288 -->
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<title>SURF Design System</title>
+<style>
+  html, body { margin:0; height:100%; }
+  body { background:var(--bg-1); color:var(--fg-1); font-family:var(--font-body); overflow:hidden; }
+  .cover { position:relative; height:288px; overflow:hidden; }
+  .art { position:absolute; top:0; left:480px; width:480px; height:288px; overflow:hidden; }
+  .art svg { display:block; width:480px; height:288px; }
+  .orange { fill:var(--surf-orange); }
+  .black { fill:var(--bg-inverse); }
+  .tint { fill:var(--surf-orange-100); }
+  .blue { fill:var(--surf-blue); }
+  .big { rx:var(--radius-xl); }
+  .card { rx:var(--radius-lg); }
+  .frame { fill:none; stroke:var(--fg-1); stroke-width:var(--border-thick); rx:var(--radius-xl); }
+  .frame.small { rx:var(--radius-md); }
+  .curl { fill:none; stroke:var(--fg-1); stroke-width:var(--border-thick); stroke-linecap:round; }
+  .words { position:absolute; left:var(--space-6); bottom:var(--space-6); max-width:440px; }
+  .name { margin:0; font-family:var(--font-display); font-size:64px; line-height:.95; font-weight:900; letter-spacing:-0.01em; color:var(--fg-1); }
+  .tag { margin:var(--space-2) 0 0 2px; font-size:14px; line-height:20px; color:var(--fg-3); }
+</style>
+</head>
+<body>
+<div class="cover">
+<div class="art" aria-hidden="true">
+<svg viewBox="0 0 480 288" width="480" height="288">
+<!--
+  blocks      surf-orange 192x320 (bleeds top and bottom, radius-xl); bg-inverse 128x128 (radius-xl; black in light); surf-orange-100 160x96 (radius-lg); surf-blue 96x96 (radius-lg)
+  arrangement one tall orange slab with satellites: black and tint stacked right of it, blue bleeding off the right edge
+  pattern     literal motif: the basiskader, a border-thick rounded frame in fg-1 (black in light) that loops out to a small rounded square like the logo curl; chosen because the README calls this frame the brand's structural signature
+  scales      space-4 16, space-6 32, space-8 64, space-10 128; radius-md 12, radius-lg 20, radius-xl 32; border-thick 4
+-->
+  <rect class="orange big" x="32" y="-32" width="192" height="320"/>
+  <rect class="tint card" x="256" y="32" width="160" height="96"/>
+  <rect class="black big" x="256" y="144" width="128" height="128"/>
+  <rect class="blue card" x="400" y="160" width="96" height="96"/>
+  <rect class="frame" x="16" y="48" width="224" height="192"/>
+  <path class="curl" d="M240 96 C 260 96, 256 64, 280 64"/>
+  <rect class="frame small" x="280" y="44" width="48" height="40"/>
+</svg>
+</div>
+<div class="words">
+  <h1 class="name">SURF Design<br>System</h1>
+  <p class="tag">Samen aanjagen van vernieuwing.</p>
+</div>
+</div>
+</body>
+</html>

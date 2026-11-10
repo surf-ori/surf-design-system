@@ -1,9 +1,26 @@
 # SURF Design System
 
+## Gebruik
+
+Laad dit in de `<head>`, in deze volgorde:
+
+```html
+<script src="https://surf-ori.github.io/surf-design-system/components/lib/surf-theme.js"></script>
+<script>SURFTheme.init()</script>
+<link rel="stylesheet" href="https://surf-ori.github.io/surf-design-system/tokens.css">
+<link rel="stylesheet" href="https://surf-ori.github.io/surf-design-system/components/bundle.css">
+<script src="https://surf-ori.github.io/surf-design-system/components/lib/oat.min.js" defer></script>
+```
+
+Zet het thema met `data-theme="light"` of `"dark"` op `<html>` (`surf-theme.js` doet dat). Laad Oat niet apart van een CDN: `bundle.css` bevat het al. React-pagina's laden daarnaast React 18 en `components/bundle.js`. Zie `examples/starter.html` en `CLAUDE.md`.
+
+---
+
 A working design system rebuilt from the **SURF Merkportaal** (brand portal) for use by design agents producing SURF‑branded artifacts: slides, mocks, prototypes, and production interfaces.
 
 > **Source:** https://merkportaal.surf.nl (public brand portal, in Dutch).
-> No codebase or Figma was provided — everything below was extracted from the public brand portal and from observing SURF's communications.
+> **Also used:** https://github.com/SURFnet/DesignSystem (Curve, SURF's code design system: product UI tokens, see the Curve section below).
+> No Figma was provided. The brand layer below was extracted from the public brand portal and from observing SURF's communications; the Curve product layer comes from the SURFnet/DesignSystem codebase.
 
 ---
 
@@ -28,8 +45,10 @@ The audience is largely Dutch‑speaking: researchers, ICT directors, education 
 
 ```
 README.md                 ← this file (brand + content + visual foundations)
-SKILL.md                  ← cross-compatible skill manifest (Claude Code-ready)
+assets/notes/SKILL.from-standalone.md ← cross-compatible skill manifest (Claude Code-ready)
 colors_and_type.css       ← CSS custom properties for the full token system
+tokens.json               ← the tokens (brand and Curve layers) the page reads
+components/               ← Button, Badge, Notice: bundle.js, bundle.css, index.d.ts, a preview and guidelines each
 assets/                   ← logos, illustrations, photography placeholders
 fonts/                    ← (empty — fonts loaded via Google Fonts)
 preview/                  ← cards rendered in the Design System tab
@@ -170,10 +189,40 @@ The merkportaal has a dedicated *Iconen* page. SURF's icons are:
 
 ---
 
+## Components
+
+In `components/<name>/` (React, exposed on the design-system bundle):
+
+- **Button** — primary (orange), secondary (black), outline, text; sm/md/lg
+- **Badge** — pill tags in support-colour tones, or uppercase labels
+- **Notice** — success / info / warning / error status messages
+
+---
+
+## CURVE — product UI layer
+
+SURF's code design system **Curve** ([SURFnet/DesignSystem](https://github.com/SURFnet/DesignSystem)) ships React (shadcn/ui + Base UI) and Angular (Spartan) packages from one DTCG token source. Its tokens are mirrored in `curve_tokens.css` as `--curve-*` vars.
+
+- **Primary is blue `#064BCB`, not orange.** Use Curve tokens for apps, dashboards and tools; use the orange brand layer for marketing/communication.
+- Body font Source Sans 3; mono Geist Mono; icons Phosphor (Curve) vs. SURF pictograms (brand).
+- Semantic sets: info / success / warning / danger, each with `-hover`, `-foreground`, `-subtle`.
+- Radii follow shadcn (base 10px). Storybooks: surfnet.github.io/DesignSystem/react/ and /angular/.
+- `styles.css` imports both layers.
+
+---
+
 ## ⚠️ Caveats & flags
 
-- **No codebase or Figma supplied.** Everything is from the public brand portal. Surf.nl and other SURF products may have additional UI conventions not captured here.
+- **Curve tokens copied from `tokens.json` (light theme only)** — dark theme and the ~40 `custom-*` component tokens not mirrored. Surf.nl and other SURF products may have additional UI conventions not captured here.
 - **Official logo shipped** in `assets/logo/` — `SURF_fc.svg` is the full‑colour mark (black container + white wordmark with the signature curl); `SURF_diap.svg` is the diapositive (wordmark only) for use on imagery / dark backgrounds.
 - **No real icon set.** Lucide is used as a stand‑in (see above).
 - **Real photography wired in** from surf.nl: the hero, basiskader preview and photography card now use live CDN images (group on campus, EUR workspace, Eveline Crone portrait). These are hotlinked — if surf.nl rotates the asset URLs, swap them or download locally to `assets/photography/`.
 - **Both fonts shipped locally.** Source Sans Pro and Nunito are in `fonts/` (full weight families, OFL).
+
+## Oat UI
+
+The design system uses Oat UI 1.0.0 (https://oat.ink) as its default HTML framework. `components/bundle.css` carries Oat's CSS with a SURF theme mapped onto the tokens, and `components/lib/oat.min.js` adds its interactive elements, so semantic HTML (buttons, forms, alerts, cards, tabs, dialogs) looks like SURF without extra classes. Details are on the Oat component.
+
+## Light and dark
+
+The design system has a light and a dark theme, switched with `data-theme="light"` or `data-theme="dark"` on `<html>`. The dark theme keeps the brand's orange and support colours and turns the neutrals, text and inverse fills around; the Curve product layer takes its dark values from the SURFnet/DesignSystem tokens. The ThemeToggle component lets people choose light, system or dark, after the DURF design system; `components/lib/surf-theme.js` stores that choice and applies it.

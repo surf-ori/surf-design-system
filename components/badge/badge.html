@@ -1,0 +1,15 @@
+<!-- @dsCard group="Components" name="Badge" subtitle="Tags in support-colour tones" viewport="700x130" -->
+<!doctype html><html lang="nl"><head><meta charset="utf-8"><link rel="stylesheet" href="../../styles.css">
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="../../_ds_bundle.js"></script></head>
+<body style="margin:0;padding:24px;background:#fff"><div id="root"></div>
+<script>
+const { Badge } = window.SURFDesignSystem_019e21;
+const h = React.createElement;
+const row = (kids) => h("div", { style: { display: "flex", gap: 8, flexWrap: "wrap", marginBottom: 12 } }, kids);
+ReactDOM.createRoot(document.getElementById("root")).render(h("div", null,
+  row([["orange","Onderzoek"],["blue","Onderwijs"],["green","Beschikbaar"],["red","Onderhoud"],["purple","Pilot"],["black","SURF"]].map(([t,l]) => h(Badge, { key: t, tone: t }, l))),
+  row([h(Badge, { key: 1, shape: "label" }, "Nieuw"), h(Badge, { key: 2, shape: "label", tone: "black" }, "Beta")])
+));
+</script></body></html>

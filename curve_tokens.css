@@ -1,0 +1,76 @@
+/* =========================================================================
+   SURF Curve — product UI tokens (light theme)
+   Source: github.com/SURFnet/DesignSystem · packages/tokens/src/tokens.json
+   Curve = SURF's shadcn/Base UI-based component system for apps/tools.
+   Use these for product interfaces; colors_and_type.css stays the brand/
+   marketing layer (orange, Nunito).
+   ========================================================================= */
+@font-face{font-family:"Source Sans 3";src:url("fonts/SourceSans3-VariableFont_wght.ttf") format("truetype-variations");font-weight:200 900;font-style:normal;font-display:swap}
+@font-face{font-family:"Source Sans 3";src:url("fonts/SourceSans3-Italic-VariableFont_wght.ttf") format("truetype-variations");font-weight:200 900;font-style:italic;font-display:swap}
+@font-face{font-family:"Geist Mono";src:url("fonts/GeistMono-VariableFont_wght.ttf") format("truetype-variations");font-weight:100 900;font-style:normal;font-display:swap}
+@font-face{font-family:"Geist Mono";src:url("fonts/GeistMono-Italic-VariableFont_wght.ttf") format("truetype-variations");font-weight:100 900;font-style:italic;font-display:swap}
+:root {
+  --curve-background: #FFFFFF;
+  --curve-foreground: #0A0A0A;
+  --curve-card: #FFFFFF;
+  --curve-card-foreground: #0C0A09;
+  --curve-primary: #064BCB;
+  --curve-primary-strong: #053EAA;
+  --curve-primary-foreground: #FFFFFF;
+  --curve-secondary: #D5E2FA;
+  --curve-secondary-foreground: #000000;
+  --curve-muted: #F5F5F4;
+  --curve-muted-foreground: #525252;
+  --curve-accent: #EAF0FC;
+  --curve-accent-foreground: #171717;
+  --curve-destructive: #B91C1C;
+  --curve-destructive-foreground: #FEF2F2;
+  --curve-border: #D6D3D1;
+  --curve-border-subtle: rgba(0, 0, 0, 0.06);
+  --curve-border-strong: #737373;
+  --curve-input: #D4D4D4;
+  --curve-placeholder: #737373;
+  --curve-ring: #064BCB;
+
+  --curve-info: #043286;
+  --curve-info-hover: #053EAA;
+  --curve-info-foreground: #FFFFFF;
+  --curve-info-subtle: #EAF0FC;
+  --curve-info-subtle-foreground: #043286;
+  --curve-success: #01653D;
+  --curve-success-hover: #028752;
+  --curve-success-foreground: #FFFFFF;
+  --curve-success-subtle: #DDFDF0;
+  --curve-success-subtle-foreground: #01653D;
+  --curve-warning: #FFEB75;
+  --curve-warning-hover: #FFE84A;
+  --curve-warning-foreground: #3A3200;
+  --curve-warning-subtle: #FFF7CA;
+  --curve-warning-subtle-foreground: #9F4A1A;
+  --curve-danger: #A02721;
+  --curve-danger-hover: #83201B;
+  --curve-danger-foreground: #FFFFFF;
+  --curve-danger-subtle: #FFE0DE;
+  --curve-danger-subtle-foreground: #BD2F27;
+
+  --curve-chart-1: #EA580C;
+  --curve-chart-2: #0D9488;
+  --curve-chart-3: #164E63;
+  --curve-chart-4: #FBBF24;
+  --curve-chart-5: #F59E0B;
+
+  --curve-font-sans: "Source Sans 3", "Source Sans Pro", sans-serif;
+  --curve-font-mono: "Geist Mono", ui-monospace, monospace;
+
+  --curve-radius-xs: 2px;
+  --curve-radius-sm: 6px;
+  --curve-radius-md: 8px;
+  --curve-radius-lg: 10px;
+  --curve-radius-xl: 14px;
+  --curve-radius-2xl: 18px;
+
+  --curve-shadow-xs: 0 1px 2px 0 rgba(0,0,0,0.05);
+  --curve-shadow-sm: 0 1px 3px 0 rgba(0,0,0,0.1), 0 1px 2px -1px rgba(0,0,0,0.1);
+  --curve-shadow-md: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -2px rgba(0,0,0,0.1);
+  --curve-shadow-lg: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -4px rgba(0,0,0,0.1);
+}

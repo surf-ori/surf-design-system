@@ -1,0 +1,16 @@
+<!-- @dsCard group="Components" height=110 subtitle="Tags in support-colour tones" -->
+<!doctype html>
+<html lang="nl">
+<head><meta charset="utf-8"><title>Badge — preview</title></head>
+<body style="margin:0;padding:24px"><div id="root"></div>
+<script>
+const { Badge } = window.SURFDesignSystem_019e21;
+const h = React.createElement;
+const row = (kids) => h("div", { style: { display: "flex", gap: 8, flexWrap: "wrap", marginBottom: 12 } }, kids);
+ReactDOM.createRoot(document.getElementById("root")).render(h("div", null,
+  row([["orange","Onderzoek"],["blue","Onderwijs"],["green","Beschikbaar"],["red","Onderhoud"],["purple","Pilot"],["black","SURF"]].map(([t,l]) => h(Badge, { key: t, tone: t }, l))),
+  row([h(Badge, { key: 1, shape: "label" }, "Nieuw"), h(Badge, { key: 2, shape: "label", tone: "black" }, "Beta")])
+));
+</script>
+</body>
+</html>

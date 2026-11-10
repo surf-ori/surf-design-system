@@ -1,0 +1,16 @@
+<!-- @dsCard group="Components" height=150 subtitle="Primary, secondary, outline, text · sm/md/lg" -->
+<!doctype html>
+<html lang="nl">
+<head><meta charset="utf-8"><title>Button — preview</title></head>
+<body style="margin:0;padding:24px"><div id="root"></div>
+<script>
+const { Button } = window.SURFDesignSystem_019e21;
+const h = React.createElement;
+const row = (kids) => h("div", { style: { display: "flex", gap: 12, flexWrap: "wrap", alignItems: "center", marginBottom: 14 } }, kids);
+ReactDOM.createRoot(document.getElementById("root")).render(h("div", null,
+  row([h(Button, { key: 1 }, "Primair"), h(Button, { key: 2, variant: "secondary" }, "Secundair"), h(Button, { key: 3, variant: "outline" }, "Outline"), h(Button, { key: 4, variant: "text" }, "Tekstlink →")]),
+  row([h(Button, { key: 1, size: "sm" }, "Small"), h(Button, { key: 2, size: "lg" }, "Large"), h(Button, { key: 3, disabled: true }, "Disabled")])
+));
+</script>
+</body>
+</html>
