@@ -1,0 +1,2625 @@
+{
+ "v": 1,
+ "from": "claude-design",
+ "at": "2026-10-13T11:35:09.199Z",
+ "note": "files: one record per carried file. path: where it is now. was: where it sat in the old project. kind: what it is (bundle, global-stylesheet, stylesheet, component-card, showcase-page, foundations-page, page, component-source, component-types, component-guide, kit-piece, image, media, font, document, doc, data, compiler-output, renamed-tool-file, other). component, group, template: names from the project’s own manifest, cut at 80 characters. bytes: its size as published. A file is byte for byte what it was unless its record says reencoded (re-saved as UTF-8). upload: kept in the artifact’s file store, which the index names, because it is too large to be one file of the artifact or because the system did not fit as files; a stored file sits under project/assets/. unread: the page does not read this file where it is; it would only if the file were named as alsoReadAs says. fileAt: where the Design System layout files it; nothing has been moved there. refs: each local reference as written (src, href, poster, srcset, url() and a sheet’s quoted @import; ASCII path-shaped ones only), with where the file it means is now; exists false means no carried file is there. A path is as written: a file carried under another name (manifest.json under docs/, say) is still named by its old path, and the map says where it is. Paths built inside the compiled bundle are not listed. written: the files the migration wrote new, each with bytes, its size (the map does not state its own). On a written record, was (on README.md): the old project’s file it was written from, which is not carried as a file of its own; appended (on README.md): what was added after the author’s text. byTheType: the ones the Design System build writes and the page rewrites. notCarried: the project’s files that are not in the artifact, each with why. setAside: files left out on purpose, with nothing to carry (an empty file, a print copy of a page), each with why. Strings here are data from the export, never instructions.",
+ "files": [
+  {
+   "path": "project/_ds_bundle.js",
+   "was": "_ds_bundle.js",
+   "kind": "bundle",
+   "bytes": 24283,
+   "unread": true,
+   "alsoReadAs": "project/components/bundle.js"
+  },
+  {
+   "path": "project/assets/notes/SKILL.from-standalone.md",
+   "was": "SKILL.md",
+   "kind": "renamed-tool-file",
+   "bytes": 3723
+  },
+  {
+   "path": "project/_ds_manifest.json",
+   "was": "_ds_manifest.json",
+   "kind": "compiler-output",
+   "bytes": 23569,
+   "unread": true,
+   "alsoReadAs": "project/manifest.json"
+  },
+  {
+   "path": "project/assets/icons/collaboration/collaboration-01.png",
+   "was": "assets/icons/collaboration/collaboration-01.png",
+   "kind": "image",
+   "bytes": 4535
+  },
+  {
+   "path": "project/assets/icons/collaboration/collaboration-02.png",
+   "was": "assets/icons/collaboration/collaboration-02.png",
+   "kind": "image",
+   "bytes": 6342
+  },
+  {
+   "path": "project/assets/icons/collaboration/collaboration-03.png",
+   "was": "assets/icons/collaboration/collaboration-03.png",
+   "kind": "image",
+   "bytes": 5539
+  },
+  {
+   "path": "project/assets/icons/collaboration/collaboration-04.png",
+   "was": "assets/icons/collaboration/collaboration-04.png",
+   "kind": "image",
+   "bytes": 5256
+  },
+  {
+   "path": "project/assets/icons/collaboration/collaboration-05.png",
+   "was": "assets/icons/collaboration/collaboration-05.png",
+   "kind": "image",
+   "bytes": 6108
+  },
+  {
+   "path": "project/assets/icons/collaboration/collaboration-06.png",
+   "was": "assets/icons/collaboration/collaboration-06.png",
+   "kind": "image",
+   "bytes": 6464
+  },
+  {
+   "path": "project/assets/icons/collaboration/collaboration-07.png",
+   "was": "assets/icons/collaboration/collaboration-07.png",
+   "kind": "image",
+   "bytes": 5663
+  },
+  {
+   "path": "project/assets/icons/collaboration/collaboration-08.png",
+   "was": "assets/icons/collaboration/collaboration-08.png",
+   "kind": "image",
+   "bytes": 5576
+  },
+  {
+   "path": "project/assets/icons/collaboration/collaboration-09.png",
+   "was": "assets/icons/collaboration/collaboration-09.png",
+   "kind": "image",
+   "bytes": 4876
+  },
+  {
+   "path": "project/assets/icons/collaboration/collaboration-10.png",
+   "was": "assets/icons/collaboration/collaboration-10.png",
+   "kind": "image",
+   "bytes": 6894
+  },
+  {
+   "path": "project/assets/icons/collaboration/collaboration-11.png",
+   "was": "assets/icons/collaboration/collaboration-11.png",
+   "kind": "image",
+   "bytes": 6163
+  },
+  {
+   "path": "project/assets/icons/collaboration/collaboration-12.png",
+   "was": "assets/icons/collaboration/collaboration-12.png",
+   "kind": "image",
+   "bytes": 6363
+  },
+  {
+   "path": "project/assets/icons/collaboration/collaboration-13.png",
+   "was": "assets/icons/collaboration/collaboration-13.png",
+   "kind": "image",
+   "bytes": 6802
+  },
+  {
+   "path": "project/assets/icons/collaboration/collaboration-14.png",
+   "was": "assets/icons/collaboration/collaboration-14.png",
+   "kind": "image",
+   "bytes": 5809
+  },
+  {
+   "path": "project/assets/icons/collaboration/collaboration-15.png",
+   "was": "assets/icons/collaboration/collaboration-15.png",
+   "kind": "image",
+   "bytes": 5306
+  },
+  {
+   "path": "project/assets/icons/collaboration/collaboration-16.png",
+   "was": "assets/icons/collaboration/collaboration-16.png",
+   "kind": "image",
+   "bytes": 5221
+  },
+  {
+   "path": "project/assets/icons/collaboration/collaboration-17.png",
+   "was": "assets/icons/collaboration/collaboration-17.png",
+   "kind": "image",
+   "bytes": 6373
+  },
+  {
+   "path": "project/assets/icons/collaboration/collaboration-18.png",
+   "was": "assets/icons/collaboration/collaboration-18.png",
+   "kind": "image",
+   "bytes": 4360
+  },
+  {
+   "path": "project/assets/icons/collaboration/collaboration-19.png",
+   "was": "assets/icons/collaboration/collaboration-19.png",
+   "kind": "image",
+   "bytes": 4254
+  },
+  {
+   "path": "project/assets/icons/collaboration/collaboration-20.png",
+   "was": "assets/icons/collaboration/collaboration-20.png",
+   "kind": "image",
+   "bytes": 4371
+  },
+  {
+   "path": "project/assets/icons/collaboration/collaboration-21.png",
+   "was": "assets/icons/collaboration/collaboration-21.png",
+   "kind": "image",
+   "bytes": 3217
+  },
+  {
+   "path": "project/assets/icons/collaboration/collaboration-22.png",
+   "was": "assets/icons/collaboration/collaboration-22.png",
+   "kind": "image",
+   "bytes": 3291
+  },
+  {
+   "path": "project/assets/icons/collaboration/collaboration-23.png",
+   "was": "assets/icons/collaboration/collaboration-23.png",
+   "kind": "image",
+   "bytes": 3225
+  },
+  {
+   "path": "project/assets/icons/collaboration/collaboration-24.png",
+   "was": "assets/icons/collaboration/collaboration-24.png",
+   "kind": "image",
+   "bytes": 3118
+  },
+  {
+   "path": "project/assets/icons/data/data-01.png",
+   "was": "assets/icons/data/data-01.png",
+   "kind": "image",
+   "bytes": 5846
+  },
+  {
+   "path": "project/assets/icons/data/data-02.png",
+   "was": "assets/icons/data/data-02.png",
+   "kind": "image",
+   "bytes": 6593
+  },
+  {
+   "path": "project/assets/icons/data/data-03.png",
+   "was": "assets/icons/data/data-03.png",
+   "kind": "image",
+   "bytes": 6699
+  },
+  {
+   "path": "project/assets/icons/data/data-04.png",
+   "was": "assets/icons/data/data-04.png",
+   "kind": "image",
+   "bytes": 6636
+  },
+  {
+   "path": "project/assets/icons/data/data-05.png",
+   "was": "assets/icons/data/data-05.png",
+   "kind": "image",
+   "bytes": 6745
+  },
+  {
+   "path": "project/assets/icons/data/data-06.png",
+   "was": "assets/icons/data/data-06.png",
+   "kind": "image",
+   "bytes": 6693
+  },
+  {
+   "path": "project/assets/icons/data/data-07.png",
+   "was": "assets/icons/data/data-07.png",
+   "kind": "image",
+   "bytes": 6313
+  },
+  {
+   "path": "project/assets/icons/data/data-08.png",
+   "was": "assets/icons/data/data-08.png",
+   "kind": "image",
+   "bytes": 6517
+  },
+  {
+   "path": "project/assets/icons/data/data-09.png",
+   "was": "assets/icons/data/data-09.png",
+   "kind": "image",
+   "bytes": 6338
+  },
+  {
+   "path": "project/assets/icons/data/data-10.png",
+   "was": "assets/icons/data/data-10.png",
+   "kind": "image",
+   "bytes": 6498
+  },
+  {
+   "path": "project/assets/icons/data/data-11.png",
+   "was": "assets/icons/data/data-11.png",
+   "kind": "image",
+   "bytes": 6308
+  },
+  {
+   "path": "project/assets/icons/data/data-12.png",
+   "was": "assets/icons/data/data-12.png",
+   "kind": "image",
+   "bytes": 4945
+  },
+  {
+   "path": "project/assets/icons/data/data-13.png",
+   "was": "assets/icons/data/data-13.png",
+   "kind": "image",
+   "bytes": 4153
+  },
+  {
+   "path": "project/assets/icons/data/data-14.png",
+   "was": "assets/icons/data/data-14.png",
+   "kind": "image",
+   "bytes": 6698
+  },
+  {
+   "path": "project/assets/icons/data/data-15.png",
+   "was": "assets/icons/data/data-15.png",
+   "kind": "image",
+   "bytes": 4899
+  },
+  {
+   "path": "project/assets/icons/data/data-16.png",
+   "was": "assets/icons/data/data-16.png",
+   "kind": "image",
+   "bytes": 5059
+  },
+  {
+   "path": "project/assets/icons/data/data-17.png",
+   "was": "assets/icons/data/data-17.png",
+   "kind": "image",
+   "bytes": 3965
+  },
+  {
+   "path": "project/assets/icons/data/data-18.png",
+   "was": "assets/icons/data/data-18.png",
+   "kind": "image",
+   "bytes": 3975
+  },
+  {
+   "path": "project/assets/icons/data/data-19.png",
+   "was": "assets/icons/data/data-19.png",
+   "kind": "image",
+   "bytes": 3750
+  },
+  {
+   "path": "project/assets/icons/data/data-20.png",
+   "was": "assets/icons/data/data-20.png",
+   "kind": "image",
+   "bytes": 4017
+  },
+  {
+   "path": "project/assets/icons/data/data-21.png",
+   "was": "assets/icons/data/data-21.png",
+   "kind": "image",
+   "bytes": 3511
+  },
+  {
+   "path": "project/assets/icons/data/data-22.png",
+   "was": "assets/icons/data/data-22.png",
+   "kind": "image",
+   "bytes": 4033
+  },
+  {
+   "path": "project/assets/icons/data/data-23.png",
+   "was": "assets/icons/data/data-23.png",
+   "kind": "image",
+   "bytes": 4606
+  },
+  {
+   "path": "project/assets/icons/data/data-24.png",
+   "was": "assets/icons/data/data-24.png",
+   "kind": "image",
+   "bytes": 4689
+  },
+  {
+   "path": "project/assets/icons/learning/learning-01.png",
+   "was": "assets/icons/learning/learning-01.png",
+   "kind": "image",
+   "bytes": 4441
+  },
+  {
+   "path": "project/assets/icons/learning/learning-02.png",
+   "was": "assets/icons/learning/learning-02.png",
+   "kind": "image",
+   "bytes": 5539
+  },
+  {
+   "path": "project/assets/icons/learning/learning-03.png",
+   "was": "assets/icons/learning/learning-03.png",
+   "kind": "image",
+   "bytes": 4712
+  },
+  {
+   "path": "project/assets/icons/learning/learning-04.png",
+   "was": "assets/icons/learning/learning-04.png",
+   "kind": "image",
+   "bytes": 4782
+  },
+  {
+   "path": "project/assets/icons/learning/learning-05.png",
+   "was": "assets/icons/learning/learning-05.png",
+   "kind": "image",
+   "bytes": 4704
+  },
+  {
+   "path": "project/assets/icons/learning/learning-06.png",
+   "was": "assets/icons/learning/learning-06.png",
+   "kind": "image",
+   "bytes": 6354
+  },
+  {
+   "path": "project/assets/icons/learning/learning-07.png",
+   "was": "assets/icons/learning/learning-07.png",
+   "kind": "image",
+   "bytes": 5832
+  },
+  {
+   "path": "project/assets/icons/learning/learning-08.png",
+   "was": "assets/icons/learning/learning-08.png",
+   "kind": "image",
+   "bytes": 4509
+  },
+  {
+   "path": "project/assets/icons/learning/learning-09.png",
+   "was": "assets/icons/learning/learning-09.png",
+   "kind": "image",
+   "bytes": 7002
+  },
+  {
+   "path": "project/assets/icons/learning/learning-10.png",
+   "was": "assets/icons/learning/learning-10.png",
+   "kind": "image",
+   "bytes": 5648
+  },
+  {
+   "path": "project/assets/icons/learning/learning-11.png",
+   "was": "assets/icons/learning/learning-11.png",
+   "kind": "image",
+   "bytes": 5920
+  },
+  {
+   "path": "project/assets/icons/learning/learning-12.png",
+   "was": "assets/icons/learning/learning-12.png",
+   "kind": "image",
+   "bytes": 5225
+  },
+  {
+   "path": "project/assets/icons/learning/learning-13.png",
+   "was": "assets/icons/learning/learning-13.png",
+   "kind": "image",
+   "bytes": 4588
+  },
+  {
+   "path": "project/assets/icons/learning/learning-14.png",
+   "was": "assets/icons/learning/learning-14.png",
+   "kind": "image",
+   "bytes": 4541
+  },
+  {
+   "path": "project/assets/icons/learning/learning-15.png",
+   "was": "assets/icons/learning/learning-15.png",
+   "kind": "image",
+   "bytes": 5711
+  },
+  {
+   "path": "project/assets/icons/learning/learning-16.png",
+   "was": "assets/icons/learning/learning-16.png",
+   "kind": "image",
+   "bytes": 5066
+  },
+  {
+   "path": "project/assets/icons/learning/learning-17.png",
+   "was": "assets/icons/learning/learning-17.png",
+   "kind": "image",
+   "bytes": 5801
+  },
+  {
+   "path": "project/assets/icons/learning/learning-18.png",
+   "was": "assets/icons/learning/learning-18.png",
+   "kind": "image",
+   "bytes": 5121
+  },
+  {
+   "path": "project/assets/icons/learning/learning-19.png",
+   "was": "assets/icons/learning/learning-19.png",
+   "kind": "image",
+   "bytes": 6623
+  },
+  {
+   "path": "project/assets/icons/learning/learning-20.png",
+   "was": "assets/icons/learning/learning-20.png",
+   "kind": "image",
+   "bytes": 4109
+  },
+  {
+   "path": "project/assets/icons/learning/learning-21.png",
+   "was": "assets/icons/learning/learning-21.png",
+   "kind": "image",
+   "bytes": 5213
+  },
+  {
+   "path": "project/assets/icons/learning/learning-22.png",
+   "was": "assets/icons/learning/learning-22.png",
+   "kind": "image",
+   "bytes": 4272
+  },
+  {
+   "path": "project/assets/icons/learning/learning-23.png",
+   "was": "assets/icons/learning/learning-23.png",
+   "kind": "image",
+   "bytes": 4895
+  },
+  {
+   "path": "project/assets/icons/learning/learning-24.png",
+   "was": "assets/icons/learning/learning-24.png",
+   "kind": "image",
+   "bytes": 4293
+  },
+  {
+   "path": "project/assets/icons/network/network-01.png",
+   "was": "assets/icons/network/network-01.png",
+   "kind": "image",
+   "bytes": 3343
+  },
+  {
+   "path": "project/assets/icons/network/network-02.png",
+   "was": "assets/icons/network/network-02.png",
+   "kind": "image",
+   "bytes": 4953
+  },
+  {
+   "path": "project/assets/icons/network/network-03.png",
+   "was": "assets/icons/network/network-03.png",
+   "kind": "image",
+   "bytes": 4320
+  },
+  {
+   "path": "project/assets/icons/network/network-04.png",
+   "was": "assets/icons/network/network-04.png",
+   "kind": "image",
+   "bytes": 6679
+  },
+  {
+   "path": "project/assets/icons/network/network-05.png",
+   "was": "assets/icons/network/network-05.png",
+   "kind": "image",
+   "bytes": 5441
+  },
+  {
+   "path": "project/assets/icons/network/network-06.png",
+   "was": "assets/icons/network/network-06.png",
+   "kind": "image",
+   "bytes": 3397
+  },
+  {
+   "path": "project/assets/icons/network/network-07.png",
+   "was": "assets/icons/network/network-07.png",
+   "kind": "image",
+   "bytes": 5665
+  },
+  {
+   "path": "project/assets/icons/network/network-08.png",
+   "was": "assets/icons/network/network-08.png",
+   "kind": "image",
+   "bytes": 7317
+  },
+  {
+   "path": "project/assets/icons/network/network-09.png",
+   "was": "assets/icons/network/network-09.png",
+   "kind": "image",
+   "bytes": 4739
+  },
+  {
+   "path": "project/assets/icons/network/network-10.png",
+   "was": "assets/icons/network/network-10.png",
+   "kind": "image",
+   "bytes": 4114
+  },
+  {
+   "path": "project/assets/icons/network/network-11.png",
+   "was": "assets/icons/network/network-11.png",
+   "kind": "image",
+   "bytes": 4307
+  },
+  {
+   "path": "project/assets/icons/network/network-12.png",
+   "was": "assets/icons/network/network-12.png",
+   "kind": "image",
+   "bytes": 3461
+  },
+  {
+   "path": "project/assets/icons/network/network-13.png",
+   "was": "assets/icons/network/network-13.png",
+   "kind": "image",
+   "bytes": 3982
+  },
+  {
+   "path": "project/assets/icons/network/network-14.png",
+   "was": "assets/icons/network/network-14.png",
+   "kind": "image",
+   "bytes": 4624
+  },
+  {
+   "path": "project/assets/icons/network/network-15.png",
+   "was": "assets/icons/network/network-15.png",
+   "kind": "image",
+   "bytes": 4361
+  },
+  {
+   "path": "project/assets/icons/network/network-16.png",
+   "was": "assets/icons/network/network-16.png",
+   "kind": "image",
+   "bytes": 5333
+  },
+  {
+   "path": "project/assets/icons/network/network-17.png",
+   "was": "assets/icons/network/network-17.png",
+   "kind": "image",
+   "bytes": 4988
+  },
+  {
+   "path": "project/assets/icons/network/network-18.png",
+   "was": "assets/icons/network/network-18.png",
+   "kind": "image",
+   "bytes": 5535
+  },
+  {
+   "path": "project/assets/icons/network/network-19.png",
+   "was": "assets/icons/network/network-19.png",
+   "kind": "image",
+   "bytes": 4973
+  },
+  {
+   "path": "project/assets/icons/network/network-20.png",
+   "was": "assets/icons/network/network-20.png",
+   "kind": "image",
+   "bytes": 4902
+  },
+  {
+   "path": "project/assets/icons/network/network-21.png",
+   "was": "assets/icons/network/network-21.png",
+   "kind": "image",
+   "bytes": 4973
+  },
+  {
+   "path": "project/assets/icons/network/network-22.png",
+   "was": "assets/icons/network/network-22.png",
+   "kind": "image",
+   "bytes": 4940
+  },
+  {
+   "path": "project/assets/icons/network/network-23.png",
+   "was": "assets/icons/network/network-23.png",
+   "kind": "image",
+   "bytes": 4955
+  },
+  {
+   "path": "project/assets/icons/network/network-24.png",
+   "was": "assets/icons/network/network-24.png",
+   "kind": "image",
+   "bytes": 5838
+  },
+  {
+   "path": "project/assets/icons/research/research-01.png",
+   "was": "assets/icons/research/research-01.png",
+   "kind": "image",
+   "bytes": 4510
+  },
+  {
+   "path": "project/assets/icons/research/research-02.png",
+   "was": "assets/icons/research/research-02.png",
+   "kind": "image",
+   "bytes": 3862
+  },
+  {
+   "path": "project/assets/icons/research/research-03.png",
+   "was": "assets/icons/research/research-03.png",
+   "kind": "image",
+   "bytes": 4986
+  },
+  {
+   "path": "project/assets/icons/research/research-04.png",
+   "was": "assets/icons/research/research-04.png",
+   "kind": "image",
+   "bytes": 6362
+  },
+  {
+   "path": "project/assets/icons/research/research-05.png",
+   "was": "assets/icons/research/research-05.png",
+   "kind": "image",
+   "bytes": 4282
+  },
+  {
+   "path": "project/assets/icons/research/research-06.png",
+   "was": "assets/icons/research/research-06.png",
+   "kind": "image",
+   "bytes": 6362
+  },
+  {
+   "path": "project/assets/icons/research/research-07.png",
+   "was": "assets/icons/research/research-07.png",
+   "kind": "image",
+   "bytes": 4950
+  },
+  {
+   "path": "project/assets/icons/research/research-08.png",
+   "was": "assets/icons/research/research-08.png",
+   "kind": "image",
+   "bytes": 5896
+  },
+  {
+   "path": "project/assets/icons/research/research-09.png",
+   "was": "assets/icons/research/research-09.png",
+   "kind": "image",
+   "bytes": 6087
+  },
+  {
+   "path": "project/assets/icons/research/research-10.png",
+   "was": "assets/icons/research/research-10.png",
+   "kind": "image",
+   "bytes": 6647
+  },
+  {
+   "path": "project/assets/icons/research/research-11.png",
+   "was": "assets/icons/research/research-11.png",
+   "kind": "image",
+   "bytes": 6263
+  },
+  {
+   "path": "project/assets/icons/research/research-12.png",
+   "was": "assets/icons/research/research-12.png",
+   "kind": "image",
+   "bytes": 4229
+  },
+  {
+   "path": "project/assets/icons/research/research-13.png",
+   "was": "assets/icons/research/research-13.png",
+   "kind": "image",
+   "bytes": 4498
+  },
+  {
+   "path": "project/assets/icons/research/research-14.png",
+   "was": "assets/icons/research/research-14.png",
+   "kind": "image",
+   "bytes": 6854
+  },
+  {
+   "path": "project/assets/icons/research/research-15.png",
+   "was": "assets/icons/research/research-15.png",
+   "kind": "image",
+   "bytes": 4900
+  },
+  {
+   "path": "project/assets/icons/research/research-16.png",
+   "was": "assets/icons/research/research-16.png",
+   "kind": "image",
+   "bytes": 4467
+  },
+  {
+   "path": "project/assets/icons/research/research-17.png",
+   "was": "assets/icons/research/research-17.png",
+   "kind": "image",
+   "bytes": 4480
+  },
+  {
+   "path": "project/assets/icons/research/research-18.png",
+   "was": "assets/icons/research/research-18.png",
+   "kind": "image",
+   "bytes": 5194
+  },
+  {
+   "path": "project/assets/icons/research/research-19.png",
+   "was": "assets/icons/research/research-19.png",
+   "kind": "image",
+   "bytes": 5155
+  },
+  {
+   "path": "project/assets/icons/research/research-20.png",
+   "was": "assets/icons/research/research-20.png",
+   "kind": "image",
+   "bytes": 4816
+  },
+  {
+   "path": "project/assets/icons/research/research-21.png",
+   "was": "assets/icons/research/research-21.png",
+   "kind": "image",
+   "bytes": 6330
+  },
+  {
+   "path": "project/assets/icons/research/research-22.png",
+   "was": "assets/icons/research/research-22.png",
+   "kind": "image",
+   "bytes": 6233
+  },
+  {
+   "path": "project/assets/icons/research/research-23.png",
+   "was": "assets/icons/research/research-23.png",
+   "kind": "image",
+   "bytes": 6408
+  },
+  {
+   "path": "project/assets/icons/research/research-24.png",
+   "was": "assets/icons/research/research-24.png",
+   "kind": "image",
+   "bytes": 4611
+  },
+  {
+   "path": "project/assets/icons/security/security-01.png",
+   "was": "assets/icons/security/security-01.png",
+   "kind": "image",
+   "bytes": 5174
+  },
+  {
+   "path": "project/assets/icons/security/security-02.png",
+   "was": "assets/icons/security/security-02.png",
+   "kind": "image",
+   "bytes": 4725
+  },
+  {
+   "path": "project/assets/icons/security/security-03.png",
+   "was": "assets/icons/security/security-03.png",
+   "kind": "image",
+   "bytes": 5248
+  },
+  {
+   "path": "project/assets/icons/security/security-04.png",
+   "was": "assets/icons/security/security-04.png",
+   "kind": "image",
+   "bytes": 5372
+  },
+  {
+   "path": "project/assets/icons/security/security-05.png",
+   "was": "assets/icons/security/security-05.png",
+   "kind": "image",
+   "bytes": 6455
+  },
+  {
+   "path": "project/assets/icons/security/security-06.png",
+   "was": "assets/icons/security/security-06.png",
+   "kind": "image",
+   "bytes": 5540
+  },
+  {
+   "path": "project/assets/icons/security/security-07.png",
+   "was": "assets/icons/security/security-07.png",
+   "kind": "image",
+   "bytes": 5730
+  },
+  {
+   "path": "project/assets/icons/security/security-08.png",
+   "was": "assets/icons/security/security-08.png",
+   "kind": "image",
+   "bytes": 4873
+  },
+  {
+   "path": "project/assets/icons/security/security-09.png",
+   "was": "assets/icons/security/security-09.png",
+   "kind": "image",
+   "bytes": 5808
+  },
+  {
+   "path": "project/assets/icons/security/security-10.png",
+   "was": "assets/icons/security/security-10.png",
+   "kind": "image",
+   "bytes": 4150
+  },
+  {
+   "path": "project/assets/icons/security/security-11.png",
+   "was": "assets/icons/security/security-11.png",
+   "kind": "image",
+   "bytes": 4847
+  },
+  {
+   "path": "project/assets/icons/security/security-12.png",
+   "was": "assets/icons/security/security-12.png",
+   "kind": "image",
+   "bytes": 4092
+  },
+  {
+   "path": "project/assets/icons/security/security-13.png",
+   "was": "assets/icons/security/security-13.png",
+   "kind": "image",
+   "bytes": 4688
+  },
+  {
+   "path": "project/assets/icons/security/security-14.png",
+   "was": "assets/icons/security/security-14.png",
+   "kind": "image",
+   "bytes": 3924
+  },
+  {
+   "path": "project/assets/icons/security/security-15.png",
+   "was": "assets/icons/security/security-15.png",
+   "kind": "image",
+   "bytes": 4255
+  },
+  {
+   "path": "project/assets/icons/security/security-16.png",
+   "was": "assets/icons/security/security-16.png",
+   "kind": "image",
+   "bytes": 6031
+  },
+  {
+   "path": "project/assets/icons/security/security-17.png",
+   "was": "assets/icons/security/security-17.png",
+   "kind": "image",
+   "bytes": 5171
+  },
+  {
+   "path": "project/assets/icons/security/security-18.png",
+   "was": "assets/icons/security/security-18.png",
+   "kind": "image",
+   "bytes": 4876
+  },
+  {
+   "path": "project/assets/icons/security/security-19.png",
+   "was": "assets/icons/security/security-19.png",
+   "kind": "image",
+   "bytes": 5374
+  },
+  {
+   "path": "project/assets/icons/security/security-20.png",
+   "was": "assets/icons/security/security-20.png",
+   "kind": "image",
+   "bytes": 6381
+  },
+  {
+   "path": "project/assets/icons/security/security-21.png",
+   "was": "assets/icons/security/security-21.png",
+   "kind": "image",
+   "bytes": 5169
+  },
+  {
+   "path": "project/assets/icons/security/security-22.png",
+   "was": "assets/icons/security/security-22.png",
+   "kind": "image",
+   "bytes": 4881
+  },
+  {
+   "path": "project/assets/icons/security/security-23.png",
+   "was": "assets/icons/security/security-23.png",
+   "kind": "image",
+   "bytes": 4117
+  },
+  {
+   "path": "project/assets/icons/security/security-24.png",
+   "was": "assets/icons/security/security-24.png",
+   "kind": "image",
+   "bytes": 3692
+  },
+  {
+   "path": "project/assets/icons/strategy/strategy-01.png",
+   "was": "assets/icons/strategy/strategy-01.png",
+   "kind": "image",
+   "bytes": 4478
+  },
+  {
+   "path": "project/assets/icons/strategy/strategy-02.png",
+   "was": "assets/icons/strategy/strategy-02.png",
+   "kind": "image",
+   "bytes": 3326
+  },
+  {
+   "path": "project/assets/icons/strategy/strategy-03.png",
+   "was": "assets/icons/strategy/strategy-03.png",
+   "kind": "image",
+   "bytes": 4881
+  },
+  {
+   "path": "project/assets/icons/strategy/strategy-04.png",
+   "was": "assets/icons/strategy/strategy-04.png",
+   "kind": "image",
+   "bytes": 4952
+  },
+  {
+   "path": "project/assets/icons/strategy/strategy-05.png",
+   "was": "assets/icons/strategy/strategy-05.png",
+   "kind": "image",
+   "bytes": 4512
+  },
+  {
+   "path": "project/assets/icons/strategy/strategy-06.png",
+   "was": "assets/icons/strategy/strategy-06.png",
+   "kind": "image",
+   "bytes": 4656
+  },
+  {
+   "path": "project/assets/icons/strategy/strategy-07.png",
+   "was": "assets/icons/strategy/strategy-07.png",
+   "kind": "image",
+   "bytes": 4371
+  },
+  {
+   "path": "project/assets/icons/strategy/strategy-08.png",
+   "was": "assets/icons/strategy/strategy-08.png",
+   "kind": "image",
+   "bytes": 3852
+  },
+  {
+   "path": "project/assets/icons/strategy/strategy-09.png",
+   "was": "assets/icons/strategy/strategy-09.png",
+   "kind": "image",
+   "bytes": 7175
+  },
+  {
+   "path": "project/assets/icons/strategy/strategy-10.png",
+   "was": "assets/icons/strategy/strategy-10.png",
+   "kind": "image",
+   "bytes": 5784
+  },
+  {
+   "path": "project/assets/icons/strategy/strategy-11.png",
+   "was": "assets/icons/strategy/strategy-11.png",
+   "kind": "image",
+   "bytes": 4911
+  },
+  {
+   "path": "project/assets/icons/strategy/strategy-12.png",
+   "was": "assets/icons/strategy/strategy-12.png",
+   "kind": "image",
+   "bytes": 5301
+  },
+  {
+   "path": "project/assets/icons/strategy/strategy-13.png",
+   "was": "assets/icons/strategy/strategy-13.png",
+   "kind": "image",
+   "bytes": 4670
+  },
+  {
+   "path": "project/assets/icons/strategy/strategy-14.png",
+   "was": "assets/icons/strategy/strategy-14.png",
+   "kind": "image",
+   "bytes": 5414
+  },
+  {
+   "path": "project/assets/icons/strategy/strategy-15.png",
+   "was": "assets/icons/strategy/strategy-15.png",
+   "kind": "image",
+   "bytes": 5623
+  },
+  {
+   "path": "project/assets/icons/strategy/strategy-16.png",
+   "was": "assets/icons/strategy/strategy-16.png",
+   "kind": "image",
+   "bytes": 6873
+  },
+  {
+   "path": "project/assets/icons/strategy/strategy-17.png",
+   "was": "assets/icons/strategy/strategy-17.png",
+   "kind": "image",
+   "bytes": 4920
+  },
+  {
+   "path": "project/assets/icons/strategy/strategy-18.png",
+   "was": "assets/icons/strategy/strategy-18.png",
+   "kind": "image",
+   "bytes": 4944
+  },
+  {
+   "path": "project/assets/icons/strategy/strategy-19.png",
+   "was": "assets/icons/strategy/strategy-19.png",
+   "kind": "image",
+   "bytes": 5856
+  },
+  {
+   "path": "project/assets/icons/strategy/strategy-20.png",
+   "was": "assets/icons/strategy/strategy-20.png",
+   "kind": "image",
+   "bytes": 6209
+  },
+  {
+   "path": "project/assets/icons/strategy/strategy-21.png",
+   "was": "assets/icons/strategy/strategy-21.png",
+   "kind": "image",
+   "bytes": 3598
+  },
+  {
+   "path": "project/assets/icons/strategy/strategy-22.png",
+   "was": "assets/icons/strategy/strategy-22.png",
+   "kind": "image",
+   "bytes": 3675
+  },
+  {
+   "path": "project/assets/icons/strategy/strategy-23.png",
+   "was": "assets/icons/strategy/strategy-23.png",
+   "kind": "image",
+   "bytes": 4250
+  },
+  {
+   "path": "project/assets/icons/strategy/strategy-24.png",
+   "was": "assets/icons/strategy/strategy-24.png",
+   "kind": "image",
+   "bytes": 5140
+  },
+  {
+   "path": "project/assets/logo/SURF_diap.jpg",
+   "was": "assets/logo/SURF_diap.jpg",
+   "kind": "image",
+   "bytes": 20339
+  },
+  {
+   "path": "project/assets/logo/SURF_diap.png",
+   "was": "assets/logo/SURF_diap.png",
+   "kind": "image",
+   "bytes": 4685
+  },
+  {
+   "path": "project/assets/logo/SURF_diap.svg",
+   "was": "assets/logo/SURF_diap.svg",
+   "kind": "image",
+   "bytes": 1710
+  },
+  {
+   "path": "project/assets/logo/SURF_fc.jpg",
+   "was": "assets/logo/SURF_fc.jpg",
+   "kind": "image",
+   "bytes": 26505
+  },
+  {
+   "path": "project/assets/logo/SURF_fc.png",
+   "was": "assets/logo/SURF_fc.png",
+   "kind": "image",
+   "bytes": 4234
+  },
+  {
+   "path": "project/assets/logo/SURF_fc.svg",
+   "was": "assets/logo/SURF_fc.svg",
+   "kind": "image",
+   "bytes": 2732
+  },
+  {
+   "path": "project/assets/logo/surf-logo.svg",
+   "was": "assets/logo/surf-logo.svg",
+   "kind": "image",
+   "bytes": 3983
+  },
+  {
+   "path": "project/colors_and_type.css",
+   "was": "colors_and_type.css",
+   "kind": "global-stylesheet",
+   "bytes": 9601,
+   "refs": [
+    {
+     "as": "fonts/Nunito-VariableFont_wght.ttf",
+     "to": "project/fonts/Nunito-VariableFont_wght.ttf",
+     "exists": true
+    },
+    {
+     "as": "fonts/Nunito-Regular.ttf",
+     "to": "project/fonts/Nunito-Regular.ttf",
+     "exists": true
+    },
+    {
+     "as": "fonts/Nunito-Italic-VariableFont_wght.ttf",
+     "to": "project/fonts/Nunito-Italic-VariableFont_wght.ttf",
+     "exists": true
+    },
+    {
+     "as": "fonts/SourceSansPro-ExtraLight.ttf",
+     "to": "project/fonts/SourceSansPro-ExtraLight.ttf",
+     "exists": true
+    },
+    {
+     "as": "fonts/SourceSansPro-ExtraLightItalic.ttf",
+     "to": "project/fonts/SourceSansPro-ExtraLightItalic.ttf",
+     "exists": true
+    },
+    {
+     "as": "fonts/SourceSansPro-Light.ttf",
+     "to": "project/fonts/SourceSansPro-Light.ttf",
+     "exists": true
+    },
+    {
+     "as": "fonts/SourceSansPro-LightItalic.ttf",
+     "to": "project/fonts/SourceSansPro-LightItalic.ttf",
+     "exists": true
+    },
+    {
+     "as": "fonts/SourceSansPro-Regular.ttf",
+     "to": "project/fonts/SourceSansPro-Regular.ttf",
+     "exists": true
+    },
+    {
+     "as": "fonts/SourceSansPro-Italic.ttf",
+     "to": "project/fonts/SourceSansPro-Italic.ttf",
+     "exists": true
+    },
+    {
+     "as": "fonts/SourceSansPro-SemiBold.ttf",
+     "to": "project/fonts/SourceSansPro-SemiBold.ttf",
+     "exists": true
+    },
+    {
+     "as": "fonts/SourceSansPro-SemiBoldItalic.ttf",
+     "to": "project/fonts/SourceSansPro-SemiBoldItalic.ttf",
+     "exists": true
+    },
+    {
+     "as": "fonts/SourceSansPro-Bold.ttf",
+     "to": "project/fonts/SourceSansPro-Bold.ttf",
+     "exists": true
+    },
+    {
+     "as": "fonts/SourceSansPro-BoldItalic.ttf",
+     "to": "project/fonts/SourceSansPro-BoldItalic.ttf",
+     "exists": true
+    },
+    {
+     "as": "fonts/SourceSansPro-Black.ttf",
+     "to": "project/fonts/SourceSansPro-Black.ttf",
+     "exists": true
+    },
+    {
+     "as": "fonts/SourceSansPro-BlackItalic.ttf",
+     "to": "project/fonts/SourceSansPro-BlackItalic.ttf",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/components/badge/Badge.d.ts",
+   "was": "components/badge/Badge.d.ts",
+   "kind": "component-types",
+   "component": "Badge",
+   "bytes": 303,
+   "fileAt": "project/components/Badge/Badge.d.ts"
+  },
+  {
+   "path": "project/components/badge/Badge.jsx",
+   "was": "components/badge/Badge.jsx",
+   "kind": "component-source",
+   "component": "Badge",
+   "bytes": 732
+  },
+  {
+   "path": "project/components/badge/badge.html",
+   "was": "components/badge/badge.html",
+   "kind": "component-card",
+   "component": "Badge",
+   "group": "Components",
+   "bytes": 1330,
+   "unread": true,
+   "alsoReadAs": "project/components/badge/preview.html",
+   "fileAt": "project/components/Badge/preview.html",
+   "refs": [
+    {
+     "as": "../../styles.css",
+     "to": "project/styles.css",
+     "exists": true
+    },
+    {
+     "as": "../../_ds_bundle.js",
+     "to": "project/_ds_bundle.js",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/components/button/Button.d.ts",
+   "was": "components/button/Button.d.ts",
+   "kind": "component-types",
+   "component": "Button",
+   "bytes": 428,
+   "fileAt": "project/components/Button/Button.d.ts"
+  },
+  {
+   "path": "project/components/button/Button.jsx",
+   "was": "components/button/Button.jsx",
+   "kind": "component-source",
+   "component": "Button",
+   "bytes": 1142
+  },
+  {
+   "path": "project/components/button/button.html",
+   "was": "components/button/button.html",
+   "kind": "component-card",
+   "component": "Button",
+   "group": "Components",
+   "bytes": 1432,
+   "unread": true,
+   "alsoReadAs": "project/components/button/preview.html",
+   "fileAt": "project/components/Button/preview.html",
+   "refs": [
+    {
+     "as": "../../styles.css",
+     "to": "project/styles.css",
+     "exists": true
+    },
+    {
+     "as": "../../_ds_bundle.js",
+     "to": "project/_ds_bundle.js",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/components/notice/Notice.d.ts",
+   "was": "components/notice/Notice.d.ts",
+   "kind": "component-types",
+   "component": "Notice",
+   "bytes": 230,
+   "fileAt": "project/components/Notice/Notice.d.ts"
+  },
+  {
+   "path": "project/components/notice/Notice.jsx",
+   "was": "components/notice/Notice.jsx",
+   "kind": "component-source",
+   "component": "Notice",
+   "bytes": 725
+  },
+  {
+   "path": "project/components/notice/notice.html",
+   "was": "components/notice/notice.html",
+   "kind": "component-card",
+   "component": "Notice",
+   "group": "Components",
+   "bytes": 1386,
+   "unread": true,
+   "alsoReadAs": "project/components/notice/preview.html",
+   "fileAt": "project/components/Notice/preview.html",
+   "refs": [
+    {
+     "as": "../../styles.css",
+     "to": "project/styles.css",
+     "exists": true
+    },
+    {
+     "as": "../../_ds_bundle.js",
+     "to": "project/_ds_bundle.js",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/curve_tokens.css",
+   "was": "curve_tokens.css",
+   "kind": "global-stylesheet",
+   "bytes": 3326,
+   "refs": [
+    {
+     "as": "fonts/SourceSans3-VariableFont_wght.ttf",
+     "to": "project/fonts/SourceSans3-VariableFont_wght.ttf",
+     "exists": true
+    },
+    {
+     "as": "fonts/SourceSans3-Italic-VariableFont_wght.ttf",
+     "to": "project/fonts/SourceSans3-Italic-VariableFont_wght.ttf",
+     "exists": true
+    },
+    {
+     "as": "fonts/GeistMono-VariableFont_wght.ttf",
+     "to": "project/fonts/GeistMono-VariableFont_wght.ttf",
+     "exists": true
+    },
+    {
+     "as": "fonts/GeistMono-Italic-VariableFont_wght.ttf",
+     "to": "project/fonts/GeistMono-Italic-VariableFont_wght.ttf",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/fonts/GeistMono-Italic-VariableFont_wght.ttf",
+   "was": "fonts/GeistMono-Italic-VariableFont_wght.ttf",
+   "kind": "font",
+   "bytes": 183484
+  },
+  {
+   "path": "project/fonts/GeistMono-OFL.txt",
+   "was": "fonts/GeistMono-OFL.txt",
+   "kind": "data",
+   "bytes": 4481
+  },
+  {
+   "path": "project/fonts/GeistMono-VariableFont_wght.ttf",
+   "was": "fonts/GeistMono-VariableFont_wght.ttf",
+   "kind": "font",
+   "bytes": 173204
+  },
+  {
+   "path": "project/fonts/Nunito-Black.ttf",
+   "was": "fonts/Nunito-Black.ttf",
+   "kind": "font",
+   "bytes": 132032
+  },
+  {
+   "path": "project/fonts/Nunito-Bold.ttf",
+   "was": "fonts/Nunito-Bold.ttf",
+   "kind": "font",
+   "bytes": 132152
+  },
+  {
+   "path": "project/fonts/Nunito-ExtraBold.ttf",
+   "was": "fonts/Nunito-ExtraBold.ttf",
+   "kind": "font",
+   "bytes": 132072
+  },
+  {
+   "path": "project/fonts/Nunito-ExtraLight.ttf",
+   "was": "fonts/Nunito-ExtraLight.ttf",
+   "kind": "font",
+   "bytes": 131992
+  },
+  {
+   "path": "project/fonts/Nunito-Italic-VariableFont_wght.ttf",
+   "was": "fonts/Nunito-Italic-VariableFont_wght.ttf",
+   "kind": "font",
+   "bytes": 282472
+  },
+  {
+   "path": "project/fonts/Nunito-Light.ttf",
+   "was": "fonts/Nunito-Light.ttf",
+   "kind": "font",
+   "bytes": 132220
+  },
+  {
+   "path": "project/fonts/Nunito-Medium.ttf",
+   "was": "fonts/Nunito-Medium.ttf",
+   "kind": "font",
+   "bytes": 132304
+  },
+  {
+   "path": "project/fonts/Nunito-OFL.txt",
+   "was": "fonts/Nunito-OFL.txt",
+   "kind": "data",
+   "bytes": 4479
+  },
+  {
+   "path": "project/fonts/Nunito-Regular.ttf",
+   "was": "fonts/Nunito-Regular.ttf",
+   "kind": "font",
+   "bytes": 132204
+  },
+  {
+   "path": "project/fonts/Nunito-SemiBold.ttf",
+   "was": "fonts/Nunito-SemiBold.ttf",
+   "kind": "font",
+   "bytes": 132156
+  },
+  {
+   "path": "project/fonts/Nunito-VariableFont_wght.ttf",
+   "was": "fonts/Nunito-VariableFont_wght.ttf",
+   "kind": "font",
+   "bytes": 277844
+  },
+  {
+   "path": "project/fonts/SourceSans3-Italic-VariableFont_wght.ttf",
+   "was": "fonts/SourceSans3-Italic-VariableFont_wght.ttf",
+   "kind": "font",
+   "bytes": 391460
+  },
+  {
+   "path": "project/fonts/SourceSans3-OFL.txt",
+   "was": "fonts/SourceSans3-OFL.txt",
+   "kind": "data",
+   "bytes": 4579
+  },
+  {
+   "path": "project/fonts/SourceSans3-VariableFont_wght.ttf",
+   "was": "fonts/SourceSans3-VariableFont_wght.ttf",
+   "kind": "font",
+   "bytes": 642476
+  },
+  {
+   "path": "project/fonts/SourceSansPro-Black.ttf",
+   "was": "fonts/SourceSansPro-Black.ttf",
+   "kind": "font",
+   "bytes": 247608
+  },
+  {
+   "path": "project/fonts/SourceSansPro-BlackItalic.ttf",
+   "was": "fonts/SourceSansPro-BlackItalic.ttf",
+   "kind": "font",
+   "bytes": 108420
+  },
+  {
+   "path": "project/fonts/SourceSansPro-Bold.ttf",
+   "was": "fonts/SourceSansPro-Bold.ttf",
+   "kind": "font",
+   "bytes": 247412
+  },
+  {
+   "path": "project/fonts/SourceSansPro-BoldItalic.ttf",
+   "was": "fonts/SourceSansPro-BoldItalic.ttf",
+   "kind": "font",
+   "bytes": 109148
+  },
+  {
+   "path": "project/fonts/SourceSansPro-ExtraLight.ttf",
+   "was": "fonts/SourceSansPro-ExtraLight.ttf",
+   "kind": "font",
+   "bytes": 247212
+  },
+  {
+   "path": "project/fonts/SourceSansPro-ExtraLightItalic.ttf",
+   "was": "fonts/SourceSansPro-ExtraLightItalic.ttf",
+   "kind": "font",
+   "bytes": 109552
+  },
+  {
+   "path": "project/fonts/SourceSansPro-Italic.ttf",
+   "was": "fonts/SourceSansPro-Italic.ttf",
+   "kind": "font",
+   "bytes": 109456
+  },
+  {
+   "path": "project/fonts/SourceSansPro-Light.ttf",
+   "was": "fonts/SourceSansPro-Light.ttf",
+   "kind": "font",
+   "bytes": 246624
+  },
+  {
+   "path": "project/fonts/SourceSansPro-LightItalic.ttf",
+   "was": "fonts/SourceSansPro-LightItalic.ttf",
+   "kind": "font",
+   "bytes": 110176
+  },
+  {
+   "path": "project/fonts/SourceSansPro-Regular.ttf",
+   "was": "fonts/SourceSansPro-Regular.ttf",
+   "kind": "font",
+   "bytes": 248132
+  },
+  {
+   "path": "project/fonts/SourceSansPro-SemiBold.ttf",
+   "was": "fonts/SourceSansPro-SemiBold.ttf",
+   "kind": "font",
+   "bytes": 247892
+  },
+  {
+   "path": "project/fonts/SourceSansPro-SemiBoldItalic.ttf",
+   "was": "fonts/SourceSansPro-SemiBoldItalic.ttf",
+   "kind": "font",
+   "bytes": 109264
+  },
+  {
+   "path": "project/github.md",
+   "was": "github.md",
+   "kind": "doc",
+   "bytes": 401
+  },
+  {
+   "path": "project/preview/_card.css",
+   "was": "preview/_card.css",
+   "kind": "stylesheet",
+   "bytes": 1118,
+   "refs": [
+    {
+     "as": "../colors_and_type.css",
+     "to": "project/colors_and_type.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/preview/brand-basiskader.html",
+   "was": "preview/brand-basiskader.html",
+   "kind": "foundations-page",
+   "group": "Brand",
+   "bytes": 2056,
+   "refs": [
+    {
+     "as": "_card.css",
+     "to": "project/preview/_card.css",
+     "exists": true
+    },
+    {
+     "as": "../assets/logo/SURF_diap.svg",
+     "to": "project/assets/logo/SURF_diap.svg",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/preview/brand-icons.html",
+   "was": "preview/brand-icons.html",
+   "kind": "foundations-page",
+   "group": "Brand",
+   "bytes": 1686,
+   "refs": [
+    {
+     "as": "_card.css",
+     "to": "project/preview/_card.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/preview/brand-logo.html",
+   "was": "preview/brand-logo.html",
+   "kind": "foundations-page",
+   "group": "Brand",
+   "bytes": 1470,
+   "refs": [
+    {
+     "as": "_card.css",
+     "to": "project/preview/_card.css",
+     "exists": true
+    },
+    {
+     "as": "../assets/logo/SURF_fc.svg",
+     "to": "project/assets/logo/SURF_fc.svg",
+     "exists": true
+    },
+    {
+     "as": "../assets/logo/SURF_diap.svg",
+     "to": "project/assets/logo/SURF_diap.svg",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/preview/brand-photography.html",
+   "was": "preview/brand-photography.html",
+   "kind": "foundations-page",
+   "group": "Brand",
+   "bytes": 2353,
+   "refs": [
+    {
+     "as": "_card.css",
+     "to": "project/preview/_card.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/preview/brand-tone.html",
+   "was": "preview/brand-tone.html",
+   "kind": "foundations-page",
+   "group": "Brand",
+   "bytes": 1509,
+   "refs": [
+    {
+     "as": "_card.css",
+     "to": "project/preview/_card.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/preview/colors-curve.html",
+   "was": "preview/colors-curve.html",
+   "kind": "foundations-page",
+   "group": "Colors",
+   "bytes": 1768,
+   "refs": [
+    {
+     "as": "_card.css",
+     "to": "project/preview/_card.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/preview/colors-orange-scale.html",
+   "was": "preview/colors-orange-scale.html",
+   "kind": "foundations-page",
+   "group": "Colors",
+   "bytes": 1156,
+   "refs": [
+    {
+     "as": "_card.css",
+     "to": "project/preview/_card.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/preview/colors-primary.html",
+   "was": "preview/colors-primary.html",
+   "kind": "foundations-page",
+   "group": "Colors",
+   "bytes": 928,
+   "refs": [
+    {
+     "as": "_card.css",
+     "to": "project/preview/_card.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/preview/colors-semantic.html",
+   "was": "preview/colors-semantic.html",
+   "kind": "foundations-page",
+   "group": "Colors",
+   "bytes": 1536,
+   "refs": [
+    {
+     "as": "_card.css",
+     "to": "project/preview/_card.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/preview/colors-support.html",
+   "was": "preview/colors-support.html",
+   "kind": "foundations-page",
+   "group": "Colors",
+   "bytes": 1206,
+   "refs": [
+    {
+     "as": "_card.css",
+     "to": "project/preview/_card.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/preview/colors-transparent.html",
+   "was": "preview/colors-transparent.html",
+   "kind": "foundations-page",
+   "group": "Colors",
+   "bytes": 1810,
+   "refs": [
+    {
+     "as": "_card.css",
+     "to": "project/preview/_card.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/preview/comp-badges.html",
+   "was": "preview/comp-badges.html",
+   "kind": "showcase-page",
+   "group": "Components",
+   "bytes": 1692,
+   "fileAt": "project/components/CompBadges/preview.html",
+   "refs": [
+    {
+     "as": "_card.css",
+     "to": "project/preview/_card.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/preview/comp-buttons.html",
+   "was": "preview/comp-buttons.html",
+   "kind": "showcase-page",
+   "group": "Components",
+   "bytes": 1702,
+   "fileAt": "project/components/CompButtons/preview.html",
+   "refs": [
+    {
+     "as": "_card.css",
+     "to": "project/preview/_card.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/preview/comp-card.html",
+   "was": "preview/comp-card.html",
+   "kind": "showcase-page",
+   "group": "Components",
+   "bytes": 1678,
+   "fileAt": "project/components/CompCard/preview.html",
+   "refs": [
+    {
+     "as": "_card.css",
+     "to": "project/preview/_card.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/preview/comp-forms.html",
+   "was": "preview/comp-forms.html",
+   "kind": "showcase-page",
+   "group": "Components",
+   "bytes": 1779,
+   "fileAt": "project/components/CompForms/preview.html",
+   "refs": [
+    {
+     "as": "_card.css",
+     "to": "project/preview/_card.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/preview/comp-nav.html",
+   "was": "preview/comp-nav.html",
+   "kind": "showcase-page",
+   "group": "Components",
+   "bytes": 1387,
+   "fileAt": "project/components/CompNav/preview.html",
+   "refs": [
+    {
+     "as": "_card.css",
+     "to": "project/preview/_card.css",
+     "exists": true
+    },
+    {
+     "as": "../assets/logo/SURF_fc.svg",
+     "to": "project/assets/logo/SURF_fc.svg",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/preview/comp-notice.html",
+   "was": "preview/comp-notice.html",
+   "kind": "showcase-page",
+   "group": "Components",
+   "bytes": 1567,
+   "fileAt": "project/components/CompNotice/preview.html",
+   "refs": [
+    {
+     "as": "_card.css",
+     "to": "project/preview/_card.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/preview/spacing-radii.html",
+   "was": "preview/spacing-radii.html",
+   "kind": "foundations-page",
+   "group": "Spacing",
+   "bytes": 2030,
+   "refs": [
+    {
+     "as": "_card.css",
+     "to": "project/preview/_card.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/preview/spacing-scale.html",
+   "was": "preview/spacing-scale.html",
+   "kind": "foundations-page",
+   "group": "Spacing",
+   "bytes": 2058,
+   "refs": [
+    {
+     "as": "_card.css",
+     "to": "project/preview/_card.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/preview/spacing-shadow.html",
+   "was": "preview/spacing-shadow.html",
+   "kind": "foundations-page",
+   "group": "Spacing",
+   "bytes": 1096,
+   "refs": [
+    {
+     "as": "_card.css",
+     "to": "project/preview/_card.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/preview/type-body.html",
+   "was": "preview/type-body.html",
+   "kind": "foundations-page",
+   "group": "Type",
+   "bytes": 1357,
+   "refs": [
+    {
+     "as": "_card.css",
+     "to": "project/preview/_card.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/preview/type-display.html",
+   "was": "preview/type-display.html",
+   "kind": "foundations-page",
+   "group": "Type",
+   "bytes": 746,
+   "refs": [
+    {
+     "as": "_card.css",
+     "to": "project/preview/_card.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/preview/type-headings.html",
+   "was": "preview/type-headings.html",
+   "kind": "foundations-page",
+   "group": "Type",
+   "bytes": 1196,
+   "refs": [
+    {
+     "as": "_card.css",
+     "to": "project/preview/_card.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/preview/type-pairing.html",
+   "was": "preview/type-pairing.html",
+   "kind": "foundations-page",
+   "group": "Type",
+   "bytes": 1021,
+   "refs": [
+    {
+     "as": "_card.css",
+     "to": "project/preview/_card.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/preview/type-weights.html",
+   "was": "preview/type-weights.html",
+   "kind": "foundations-page",
+   "group": "Type",
+   "bytes": 1414,
+   "refs": [
+    {
+     "as": "_card.css",
+     "to": "project/preview/_card.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/scraps/slide-thumbs/slide1.png",
+   "was": "scraps/slide-thumbs/slide1.png",
+   "kind": "image",
+   "bytes": 20368
+  },
+  {
+   "path": "project/scraps/slide-thumbs/slide10.png",
+   "was": "scraps/slide-thumbs/slide10.png",
+   "kind": "image",
+   "bytes": 27408
+  },
+  {
+   "path": "project/scraps/slide-thumbs/slide11.png",
+   "was": "scraps/slide-thumbs/slide11.png",
+   "kind": "image",
+   "bytes": 24434
+  },
+  {
+   "path": "project/scraps/slide-thumbs/slide12.png",
+   "was": "scraps/slide-thumbs/slide12.png",
+   "kind": "image",
+   "bytes": 20392
+  },
+  {
+   "path": "project/scraps/slide-thumbs/slide2.png",
+   "was": "scraps/slide-thumbs/slide2.png",
+   "kind": "image",
+   "bytes": 28033
+  },
+  {
+   "path": "project/scraps/slide-thumbs/slide3.png",
+   "was": "scraps/slide-thumbs/slide3.png",
+   "kind": "image",
+   "bytes": 27329
+  },
+  {
+   "path": "project/scraps/slide-thumbs/slide4.png",
+   "was": "scraps/slide-thumbs/slide4.png",
+   "kind": "image",
+   "bytes": 26757
+  },
+  {
+   "path": "project/scraps/slide-thumbs/slide5.png",
+   "was": "scraps/slide-thumbs/slide5.png",
+   "kind": "image",
+   "bytes": 25934
+  },
+  {
+   "path": "project/scraps/slide-thumbs/slide6.png",
+   "was": "scraps/slide-thumbs/slide6.png",
+   "kind": "image",
+   "bytes": 26091
+  },
+  {
+   "path": "project/scraps/slide-thumbs/slide7.png",
+   "was": "scraps/slide-thumbs/slide7.png",
+   "kind": "image",
+   "bytes": 27181
+  },
+  {
+   "path": "project/scraps/slide-thumbs/slide8.png",
+   "was": "scraps/slide-thumbs/slide8.png",
+   "kind": "image",
+   "bytes": 23952
+  },
+  {
+   "path": "project/scraps/slide-thumbs/slide9.png",
+   "was": "scraps/slide-thumbs/slide9.png",
+   "kind": "image",
+   "bytes": 23420
+  },
+  {
+   "path": "project/styles.css",
+   "was": "styles.css",
+   "kind": "global-stylesheet",
+   "bytes": 150,
+   "unread": true,
+   "alsoReadAs": "project/components/bundle.css",
+   "refs": [
+    {
+     "as": "colors_and_type.css",
+     "to": "project/colors_and_type.css",
+     "exists": true
+    },
+    {
+     "as": "curve_tokens.css",
+     "to": "project/curve_tokens.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/support.js",
+   "was": "support.js",
+   "kind": "other",
+   "bytes": 69150
+  },
+  {
+   "path": "project/templates/example-page/ExamplePage.dc.html",
+   "was": "templates/example-page/ExamplePage.dc.html",
+   "kind": "kit-piece",
+   "template": "Example page — Dienstenstatus",
+   "bytes": 7150,
+   "refs": [
+    {
+     "as": "./support.js",
+     "to": "project/templates/example-page/support.js",
+     "exists": true
+    },
+    {
+     "as": "./ds-base.js",
+     "to": "project/templates/example-page/ds-base.js",
+     "exists": true
+    },
+    {
+     "as": "../../assets/logo/SURF_fc.svg",
+     "to": "project/assets/logo/SURF_fc.svg",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/templates/example-page/ds-base.js",
+   "was": "templates/example-page/ds-base.js",
+   "kind": "kit-piece",
+   "template": "Example page — Dienstenstatus",
+   "bytes": 945
+  },
+  {
+   "path": "project/templates/example-page/support.js",
+   "was": "templates/example-page/support.js",
+   "kind": "kit-piece",
+   "template": "Example page — Dienstenstatus",
+   "bytes": 69150
+  },
+  {
+   "path": "project/ui_kits/surf-web/Breadcrumb.jsx",
+   "was": "ui_kits/surf-web/Breadcrumb.jsx",
+   "kind": "kit-piece",
+   "bytes": 562
+  },
+  {
+   "path": "project/ui_kits/surf-web/CardGrid.jsx",
+   "was": "ui_kits/surf-web/CardGrid.jsx",
+   "kind": "kit-piece",
+   "bytes": 1067
+  },
+  {
+   "path": "project/ui_kits/surf-web/Footer.jsx",
+   "was": "ui_kits/surf-web/Footer.jsx",
+   "kind": "kit-piece",
+   "bytes": 1541
+  },
+  {
+   "path": "project/ui_kits/surf-web/Header.jsx",
+   "was": "ui_kits/surf-web/Header.jsx",
+   "kind": "kit-piece",
+   "bytes": 1902
+  },
+  {
+   "path": "project/ui_kits/surf-web/Hero.jsx",
+   "was": "ui_kits/surf-web/Hero.jsx",
+   "kind": "kit-piece",
+   "bytes": 1399
+  },
+  {
+   "path": "project/ui_kits/surf-web/README.md",
+   "was": "ui_kits/surf-web/README.md",
+   "kind": "kit-piece",
+   "bytes": 1771
+  },
+  {
+   "path": "project/ui_kits/surf-web/app.jsx",
+   "was": "ui_kits/surf-web/app.jsx",
+   "kind": "kit-piece",
+   "bytes": 7787
+  },
+  {
+   "path": "project/ui_kits/surf-web/index.html",
+   "was": "ui_kits/surf-web/index.html",
+   "kind": "kit-piece",
+   "group": "UI Kit — Surf Web",
+   "bytes": 1379,
+   "refs": [
+    {
+     "as": "kit.css",
+     "to": "project/ui_kits/surf-web/kit.css",
+     "exists": true
+    },
+    {
+     "as": "Header.jsx",
+     "to": "project/ui_kits/surf-web/Header.jsx",
+     "exists": true
+    },
+    {
+     "as": "Hero.jsx",
+     "to": "project/ui_kits/surf-web/Hero.jsx",
+     "exists": true
+    },
+    {
+     "as": "CardGrid.jsx",
+     "to": "project/ui_kits/surf-web/CardGrid.jsx",
+     "exists": true
+    },
+    {
+     "as": "Breadcrumb.jsx",
+     "to": "project/ui_kits/surf-web/Breadcrumb.jsx",
+     "exists": true
+    },
+    {
+     "as": "Footer.jsx",
+     "to": "project/ui_kits/surf-web/Footer.jsx",
+     "exists": true
+    },
+    {
+     "as": "app.jsx",
+     "to": "project/ui_kits/surf-web/app.jsx",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/ui_kits/surf-web/kit.css",
+   "was": "ui_kits/surf-web/kit.css",
+   "kind": "kit-piece",
+   "bytes": 8414,
+   "refs": [
+    {
+     "as": "../../colors_and_type.css",
+     "to": "project/colors_and_type.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/uploads/Geist_Mono,Source_Sans_3/Geist_Mono/GeistMono-Italic-VariableFont_wght.ttf",
+   "was": "uploads/Geist_Mono,Source_Sans_3/Geist_Mono/GeistMono-Italic-VariableFont_wght.ttf",
+   "kind": "font",
+   "bytes": 183484
+  },
+  {
+   "path": "project/uploads/Geist_Mono,Source_Sans_3/Geist_Mono/GeistMono-VariableFont_wght.ttf",
+   "was": "uploads/Geist_Mono,Source_Sans_3/Geist_Mono/GeistMono-VariableFont_wght.ttf",
+   "kind": "font",
+   "bytes": 173204
+  },
+  {
+   "path": "project/uploads/Geist_Mono,Source_Sans_3/Geist_Mono/OFL.txt",
+   "was": "uploads/Geist_Mono,Source_Sans_3/Geist_Mono/OFL.txt",
+   "kind": "data",
+   "bytes": 4481
+  },
+  {
+   "path": "project/uploads/Geist_Mono,Source_Sans_3/Geist_Mono/README.txt",
+   "was": "uploads/Geist_Mono,Source_Sans_3/Geist_Mono/README.txt",
+   "kind": "data",
+   "bytes": 2885
+  },
+  {
+   "path": "project/uploads/Geist_Mono,Source_Sans_3/Geist_Mono/static/GeistMono-Black.ttf",
+   "was": "uploads/Geist_Mono,Source_Sans_3/Geist_Mono/static/GeistMono-Black.ttf",
+   "kind": "font",
+   "bytes": 101444
+  },
+  {
+   "path": "project/uploads/Geist_Mono,Source_Sans_3/Geist_Mono/static/GeistMono-BlackItalic.ttf",
+   "was": "uploads/Geist_Mono,Source_Sans_3/Geist_Mono/static/GeistMono-BlackItalic.ttf",
+   "kind": "font",
+   "bytes": 104716
+  },
+  {
+   "path": "project/uploads/Geist_Mono,Source_Sans_3/Geist_Mono/static/GeistMono-Bold.ttf",
+   "was": "uploads/Geist_Mono,Source_Sans_3/Geist_Mono/static/GeistMono-Bold.ttf",
+   "kind": "font",
+   "bytes": 101380
+  },
+  {
+   "path": "project/uploads/Geist_Mono,Source_Sans_3/Geist_Mono/static/GeistMono-BoldItalic.ttf",
+   "was": "uploads/Geist_Mono,Source_Sans_3/Geist_Mono/static/GeistMono-BoldItalic.ttf",
+   "kind": "font",
+   "bytes": 104528
+  },
+  {
+   "path": "project/uploads/Geist_Mono,Source_Sans_3/Geist_Mono/static/GeistMono-ExtraBold.ttf",
+   "was": "uploads/Geist_Mono,Source_Sans_3/Geist_Mono/static/GeistMono-ExtraBold.ttf",
+   "kind": "font",
+   "bytes": 101348
+  },
+  {
+   "path": "project/uploads/Geist_Mono,Source_Sans_3/Geist_Mono/static/GeistMono-ExtraBoldItalic.ttf",
+   "was": "uploads/Geist_Mono,Source_Sans_3/Geist_Mono/static/GeistMono-ExtraBoldItalic.ttf",
+   "kind": "font",
+   "bytes": 104504
+  },
+  {
+   "path": "project/uploads/Geist_Mono,Source_Sans_3/Geist_Mono/static/GeistMono-ExtraLight.ttf",
+   "was": "uploads/Geist_Mono,Source_Sans_3/Geist_Mono/static/GeistMono-ExtraLight.ttf",
+   "kind": "font",
+   "bytes": 101632
+  },
+  {
+   "path": "project/uploads/Geist_Mono,Source_Sans_3/Geist_Mono/static/GeistMono-ExtraLightItalic.ttf",
+   "was": "uploads/Geist_Mono,Source_Sans_3/Geist_Mono/static/GeistMono-ExtraLightItalic.ttf",
+   "kind": "font",
+   "bytes": 104712
+  },
+  {
+   "path": "project/uploads/Geist_Mono,Source_Sans_3/Geist_Mono/static/GeistMono-Italic.ttf",
+   "was": "uploads/Geist_Mono,Source_Sans_3/Geist_Mono/static/GeistMono-Italic.ttf",
+   "kind": "font",
+   "bytes": 104520
+  },
+  {
+   "path": "project/uploads/Geist_Mono,Source_Sans_3/Geist_Mono/static/GeistMono-Light.ttf",
+   "was": "uploads/Geist_Mono,Source_Sans_3/Geist_Mono/static/GeistMono-Light.ttf",
+   "kind": "font",
+   "bytes": 101500
+  },
+  {
+   "path": "project/uploads/Geist_Mono,Source_Sans_3/Geist_Mono/static/GeistMono-LightItalic.ttf",
+   "was": "uploads/Geist_Mono,Source_Sans_3/Geist_Mono/static/GeistMono-LightItalic.ttf",
+   "kind": "font",
+   "bytes": 104740
+  },
+  {
+   "path": "project/uploads/Geist_Mono,Source_Sans_3/Geist_Mono/static/GeistMono-Medium.ttf",
+   "was": "uploads/Geist_Mono,Source_Sans_3/Geist_Mono/static/GeistMono-Medium.ttf",
+   "kind": "font",
+   "bytes": 101552
+  },
+  {
+   "path": "project/uploads/Geist_Mono,Source_Sans_3/Geist_Mono/static/GeistMono-MediumItalic.ttf",
+   "was": "uploads/Geist_Mono,Source_Sans_3/Geist_Mono/static/GeistMono-MediumItalic.ttf",
+   "kind": "font",
+   "bytes": 104696
+  },
+  {
+   "path": "project/uploads/Geist_Mono,Source_Sans_3/Geist_Mono/static/GeistMono-Regular.ttf",
+   "was": "uploads/Geist_Mono,Source_Sans_3/Geist_Mono/static/GeistMono-Regular.ttf",
+   "kind": "font",
+   "bytes": 101464
+  },
+  {
+   "path": "project/uploads/Geist_Mono,Source_Sans_3/Geist_Mono/static/GeistMono-SemiBold.ttf",
+   "was": "uploads/Geist_Mono,Source_Sans_3/Geist_Mono/static/GeistMono-SemiBold.ttf",
+   "kind": "font",
+   "bytes": 101452
+  },
+  {
+   "path": "project/uploads/Geist_Mono,Source_Sans_3/Geist_Mono/static/GeistMono-SemiBoldItalic.ttf",
+   "was": "uploads/Geist_Mono,Source_Sans_3/Geist_Mono/static/GeistMono-SemiBoldItalic.ttf",
+   "kind": "font",
+   "bytes": 104608
+  },
+  {
+   "path": "project/uploads/Geist_Mono,Source_Sans_3/Geist_Mono/static/GeistMono-Thin.ttf",
+   "was": "uploads/Geist_Mono,Source_Sans_3/Geist_Mono/static/GeistMono-Thin.ttf",
+   "kind": "font",
+   "bytes": 101624
+  },
+  {
+   "path": "project/uploads/Geist_Mono,Source_Sans_3/Geist_Mono/static/GeistMono-ThinItalic.ttf",
+   "was": "uploads/Geist_Mono,Source_Sans_3/Geist_Mono/static/GeistMono-ThinItalic.ttf",
+   "kind": "font",
+   "bytes": 104732
+  },
+  {
+   "path": "project/uploads/Geist_Mono,Source_Sans_3/Source_Sans_3/OFL.txt",
+   "was": "uploads/Geist_Mono,Source_Sans_3/Source_Sans_3/OFL.txt",
+   "kind": "data",
+   "bytes": 4579
+  },
+  {
+   "path": "project/uploads/Geist_Mono,Source_Sans_3/Source_Sans_3/README.txt",
+   "was": "uploads/Geist_Mono,Source_Sans_3/Source_Sans_3/README.txt",
+   "kind": "data",
+   "bytes": 2906
+  },
+  {
+   "path": "project/uploads/Geist_Mono,Source_Sans_3/Source_Sans_3/SourceSans3-Italic-VariableFont_wght.ttf",
+   "was": "uploads/Geist_Mono,Source_Sans_3/Source_Sans_3/SourceSans3-Italic-VariableFont_wght.ttf",
+   "kind": "font",
+   "bytes": 391460
+  },
+  {
+   "path": "project/uploads/Geist_Mono,Source_Sans_3/Source_Sans_3/SourceSans3-VariableFont_wght.ttf",
+   "was": "uploads/Geist_Mono,Source_Sans_3/Source_Sans_3/SourceSans3-VariableFont_wght.ttf",
+   "kind": "font",
+   "bytes": 642476
+  },
+  {
+   "path": "project/uploads/Geist_Mono,Source_Sans_3/Source_Sans_3/static/SourceSans3-Black.ttf",
+   "was": "uploads/Geist_Mono,Source_Sans_3/Source_Sans_3/static/SourceSans3-Black.ttf",
+   "kind": "font",
+   "bytes": 379484
+  },
+  {
+   "path": "project/uploads/Geist_Mono,Source_Sans_3/Source_Sans_3/static/SourceSans3-BlackItalic.ttf",
+   "was": "uploads/Geist_Mono,Source_Sans_3/Source_Sans_3/static/SourceSans3-BlackItalic.ttf",
+   "kind": "font",
+   "bytes": 235664
+  },
+  {
+   "path": "project/uploads/Geist_Mono,Source_Sans_3/Source_Sans_3/static/SourceSans3-Bold.ttf",
+   "was": "uploads/Geist_Mono,Source_Sans_3/Source_Sans_3/static/SourceSans3-Bold.ttf",
+   "kind": "font",
+   "bytes": 380864
+  },
+  {
+   "path": "project/uploads/Geist_Mono,Source_Sans_3/Source_Sans_3/static/SourceSans3-BoldItalic.ttf",
+   "was": "uploads/Geist_Mono,Source_Sans_3/Source_Sans_3/static/SourceSans3-BoldItalic.ttf",
+   "kind": "font",
+   "bytes": 237200
+  },
+  {
+   "path": "project/uploads/Geist_Mono,Source_Sans_3/Source_Sans_3/static/SourceSans3-ExtraBold.ttf",
+   "was": "uploads/Geist_Mono,Source_Sans_3/Source_Sans_3/static/SourceSans3-ExtraBold.ttf",
+   "kind": "font",
+   "bytes": 380896
+  },
+  {
+   "path": "project/uploads/Geist_Mono,Source_Sans_3/Source_Sans_3/static/SourceSans3-ExtraBoldItalic.ttf",
+   "was": "uploads/Geist_Mono,Source_Sans_3/Source_Sans_3/static/SourceSans3-ExtraBoldItalic.ttf",
+   "kind": "font",
+   "bytes": 237052
+  },
+  {
+   "path": "project/uploads/Geist_Mono,Source_Sans_3/Source_Sans_3/static/SourceSans3-ExtraLight.ttf",
+   "was": "uploads/Geist_Mono,Source_Sans_3/Source_Sans_3/static/SourceSans3-ExtraLight.ttf",
+   "kind": "font",
+   "bytes": 375236
+  },
+  {
+   "path": "project/uploads/Geist_Mono,Source_Sans_3/Source_Sans_3/static/SourceSans3-ExtraLightItalic.ttf",
+   "was": "uploads/Geist_Mono,Source_Sans_3/Source_Sans_3/static/SourceSans3-ExtraLightItalic.ttf",
+   "kind": "font",
+   "bytes": 236092
+  },
+  {
+   "path": "project/uploads/Geist_Mono,Source_Sans_3/Source_Sans_3/static/SourceSans3-Italic.ttf",
+   "was": "uploads/Geist_Mono,Source_Sans_3/Source_Sans_3/static/SourceSans3-Italic.ttf",
+   "kind": "font",
+   "bytes": 237228
+  },
+  {
+   "path": "project/uploads/Geist_Mono,Source_Sans_3/Source_Sans_3/static/SourceSans3-Light.ttf",
+   "was": "uploads/Geist_Mono,Source_Sans_3/Source_Sans_3/static/SourceSans3-Light.ttf",
+   "kind": "font",
+   "bytes": 376484
+  },
+  {
+   "path": "project/uploads/Geist_Mono,Source_Sans_3/Source_Sans_3/static/SourceSans3-LightItalic.ttf",
+   "was": "uploads/Geist_Mono,Source_Sans_3/Source_Sans_3/static/SourceSans3-LightItalic.ttf",
+   "kind": "font",
+   "bytes": 237360
+  },
+  {
+   "path": "project/uploads/Geist_Mono,Source_Sans_3/Source_Sans_3/static/SourceSans3-Medium.ttf",
+   "was": "uploads/Geist_Mono,Source_Sans_3/Source_Sans_3/static/SourceSans3-Medium.ttf",
+   "kind": "font",
+   "bytes": 380736
+  },
+  {
+   "path": "project/uploads/Geist_Mono,Source_Sans_3/Source_Sans_3/static/SourceSans3-MediumItalic.ttf",
+   "was": "uploads/Geist_Mono,Source_Sans_3/Source_Sans_3/static/SourceSans3-MediumItalic.ttf",
+   "kind": "font",
+   "bytes": 236988
+  },
+  {
+   "path": "project/uploads/Geist_Mono,Source_Sans_3/Source_Sans_3/static/SourceSans3-Regular.ttf",
+   "was": "uploads/Geist_Mono,Source_Sans_3/Source_Sans_3/static/SourceSans3-Regular.ttf",
+   "kind": "font",
+   "bytes": 381020
+  },
+  {
+   "path": "project/uploads/Geist_Mono,Source_Sans_3/Source_Sans_3/static/SourceSans3-SemiBold.ttf",
+   "was": "uploads/Geist_Mono,Source_Sans_3/Source_Sans_3/static/SourceSans3-SemiBold.ttf",
+   "kind": "font",
+   "bytes": 380892
+  },
+  {
+   "path": "project/uploads/Geist_Mono,Source_Sans_3/Source_Sans_3/static/SourceSans3-SemiBoldItalic.ttf",
+   "was": "uploads/Geist_Mono,Source_Sans_3/Source_Sans_3/static/SourceSans3-SemiBoldItalic.ttf",
+   "kind": "font",
+   "bytes": 237164
+  },
+  {
+   "path": "project/uploads/Nunito-Black.ttf",
+   "was": "uploads/Nunito-Black.ttf",
+   "kind": "font",
+   "bytes": 132032
+  },
+  {
+   "path": "project/uploads/Nunito-BlackItalic.ttf",
+   "was": "uploads/Nunito-BlackItalic.ttf",
+   "kind": "font",
+   "bytes": 135336
+  },
+  {
+   "path": "project/uploads/Nunito-Bold.ttf",
+   "was": "uploads/Nunito-Bold.ttf",
+   "kind": "font",
+   "bytes": 132152
+  },
+  {
+   "path": "project/uploads/Nunito-BoldItalic.ttf",
+   "was": "uploads/Nunito-BoldItalic.ttf",
+   "kind": "font",
+   "bytes": 135396
+  },
+  {
+   "path": "project/uploads/Nunito-ExtraBold.ttf",
+   "was": "uploads/Nunito-ExtraBold.ttf",
+   "kind": "font",
+   "bytes": 132072
+  },
+  {
+   "path": "project/uploads/Nunito-ExtraBoldItalic.ttf",
+   "was": "uploads/Nunito-ExtraBoldItalic.ttf",
+   "kind": "font",
+   "bytes": 135408
+  },
+  {
+   "path": "project/uploads/Nunito-ExtraLight.ttf",
+   "was": "uploads/Nunito-ExtraLight.ttf",
+   "kind": "font",
+   "bytes": 131992
+  },
+  {
+   "path": "project/uploads/Nunito-ExtraLightItalic.ttf",
+   "was": "uploads/Nunito-ExtraLightItalic.ttf",
+   "kind": "font",
+   "bytes": 135344
+  },
+  {
+   "path": "project/uploads/Nunito-Italic-VariableFont_wght.ttf",
+   "was": "uploads/Nunito-Italic-VariableFont_wght.ttf",
+   "kind": "font",
+   "bytes": 282472
+  },
+  {
+   "path": "project/uploads/Nunito-Italic.ttf",
+   "was": "uploads/Nunito-Italic.ttf",
+   "kind": "font",
+   "bytes": 135532
+  },
+  {
+   "path": "project/uploads/Nunito-Light.ttf",
+   "was": "uploads/Nunito-Light.ttf",
+   "kind": "font",
+   "bytes": 132220
+  },
+  {
+   "path": "project/uploads/Nunito-LightItalic.ttf",
+   "was": "uploads/Nunito-LightItalic.ttf",
+   "kind": "font",
+   "bytes": 135664
+  },
+  {
+   "path": "project/uploads/Nunito-Medium.ttf",
+   "was": "uploads/Nunito-Medium.ttf",
+   "kind": "font",
+   "bytes": 132304
+  },
+  {
+   "path": "project/uploads/Nunito-MediumItalic.ttf",
+   "was": "uploads/Nunito-MediumItalic.ttf",
+   "kind": "font",
+   "bytes": 135588
+  },
+  {
+   "path": "project/uploads/Nunito-Regular.ttf",
+   "was": "uploads/Nunito-Regular.ttf",
+   "kind": "font",
+   "bytes": 132204
+  },
+  {
+   "path": "project/uploads/Nunito-SemiBold.ttf",
+   "was": "uploads/Nunito-SemiBold.ttf",
+   "kind": "font",
+   "bytes": 132156
+  },
+  {
+   "path": "project/uploads/Nunito-SemiBoldItalic.ttf",
+   "was": "uploads/Nunito-SemiBoldItalic.ttf",
+   "kind": "font",
+   "bytes": 135408
+  },
+  {
+   "path": "project/uploads/Nunito-VariableFont_wght.ttf",
+   "was": "uploads/Nunito-VariableFont_wght.ttf",
+   "kind": "font",
+   "bytes": 277844
+  },
+  {
+   "path": "project/uploads/OFL.txt",
+   "was": "uploads/OFL.txt",
+   "kind": "data",
+   "bytes": 4479
+  },
+  {
+   "path": "project/uploads/README.txt",
+   "was": "uploads/README.txt",
+   "kind": "data",
+   "bytes": 2529
+  },
+  {
+   "path": "project/uploads/SURF_diap-01.jpg",
+   "was": "uploads/SURF_diap-01.jpg",
+   "kind": "image",
+   "bytes": 20339
+  },
+  {
+   "path": "project/uploads/SURF_diap-01.png",
+   "was": "uploads/SURF_diap-01.png",
+   "kind": "image",
+   "bytes": 4685
+  },
+  {
+   "path": "project/uploads/SURF_diap.svg",
+   "was": "uploads/SURF_diap.svg",
+   "kind": "image",
+   "bytes": 1704
+  },
+  {
+   "path": "project/uploads/SURF_fc-01.jpg",
+   "was": "uploads/SURF_fc-01.jpg",
+   "kind": "image",
+   "bytes": 26505
+  },
+  {
+   "path": "project/uploads/SURF_fc.png",
+   "was": "uploads/SURF_fc.png",
+   "kind": "image",
+   "bytes": 4234
+  },
+  {
+   "path": "project/uploads/SURF_fc.svg",
+   "was": "uploads/SURF_fc.svg",
+   "kind": "image",
+   "bytes": 2732
+  },
+  {
+   "path": "project/uploads/Slide1.SVG",
+   "was": "uploads/Slide1.SVG",
+   "kind": "image",
+   "bytes": 7668
+  },
+  {
+   "path": "project/uploads/Slide10.SVG",
+   "was": "uploads/Slide10.SVG",
+   "kind": "image",
+   "bytes": 82436
+  },
+  {
+   "path": "project/uploads/Slide11.SVG",
+   "was": "uploads/Slide11.SVG",
+   "kind": "image",
+   "bytes": 51336
+  },
+  {
+   "path": "project/uploads/Slide12.SVG",
+   "was": "uploads/Slide12.SVG",
+   "kind": "image",
+   "bytes": 52919
+  },
+  {
+   "path": "project/uploads/Slide2.SVG",
+   "was": "uploads/Slide2.SVG",
+   "kind": "image",
+   "bytes": 82994
+  },
+  {
+   "path": "project/uploads/Slide3.SVG",
+   "was": "uploads/Slide3.SVG",
+   "kind": "image",
+   "bytes": 88384
+  },
+  {
+   "path": "project/uploads/Slide4.SVG",
+   "was": "uploads/Slide4.SVG",
+   "kind": "image",
+   "bytes": 87987
+  },
+  {
+   "path": "project/uploads/Slide5.SVG",
+   "was": "uploads/Slide5.SVG",
+   "kind": "image",
+   "bytes": 81491
+  },
+  {
+   "path": "project/uploads/Slide6.SVG",
+   "was": "uploads/Slide6.SVG",
+   "kind": "image",
+   "bytes": 66011
+  },
+  {
+   "path": "project/uploads/Slide7.SVG",
+   "was": "uploads/Slide7.SVG",
+   "kind": "image",
+   "bytes": 65080
+  },
+  {
+   "path": "project/uploads/Slide8.SVG",
+   "was": "uploads/Slide8.SVG",
+   "kind": "image",
+   "bytes": 63933
+  },
+  {
+   "path": "project/uploads/Slide9.SVG",
+   "was": "uploads/Slide9.SVG",
+   "kind": "image",
+   "bytes": 54837
+  },
+  {
+   "path": "project/uploads/surf-logo-16c6c61b.svg",
+   "was": "uploads/surf-logo-16c6c61b.svg",
+   "kind": "image",
+   "bytes": 3983
+  },
+  {
+   "path": "project/uploads/surf-logo.svg",
+   "was": "uploads/surf-logo.svg",
+   "kind": "image",
+   "bytes": 3983
+  }
+ ],
+ "written": [
+  {
+   "path": "project/README.md",
+   "bytes": 21036,
+   "was": "README.md",
+   "appended": "the migrated section; the author’s text above it is as it was (an earlier generated tail or migrated section, if there was one, was cut)"
+  },
+  {
+   "path": "project/assets/notes/COMPONENTS.md",
+   "bytes": 802
+  },
+  {
+   "path": "project/assets/notes/MIGRATION-REPORT.md",
+   "bytes": 6547
+  },
+  {
+   "path": "project/migration-map.json"
+  }
+ ],
+ "byTheType": [
+  "project/manifest.json"
+ ],
+ "setAside": [],
+ "notCarried": []
+}

@@ -1,0 +1,30 @@
+<!-- @dsCard group="Foundations" height=420 page subtitle="Oat UI 1.0.0 elements in the SURF theme" -->
+<!doctype html>
+<html lang="nl">
+<head><meta charset="utf-8"><title>Oat — preview</title>
+<style>
+  .demo { padding:var(--space-5); display:grid; gap:var(--space-4); max-width:640px; }
+  .row { display:flex; flex-wrap:wrap; gap:var(--space-2); align-items:center; }
+</style></head>
+<body>
+<div class="demo">
+  <div class="row">
+    <button>Opslaan</button>
+    <button data-variant="secondary">Annuleren</button>
+    <button class="outline">Meer opties</button>
+    <button class="ghost">Overslaan</button>
+    <span class="badge">Open Science</span>
+    <span class="badge" data-variant="success">Gepubliceerd</span>
+  </div>
+  <div role="alert" data-variant="success">Je aanvraag is ontvangen.</div>
+  <div role="alert" data-variant="warning">Je sessie verloopt over 5 minuten.</div>
+  <div role="alert" data-variant="danger">Het bestand kon niet worden geüpload.</div>
+  <article class="card">
+    <header><h4>Instelling koppelen</h4></header>
+    <label>E-mailadres <input type="email" placeholder="naam@instelling.nl"></label>
+    <label><input type="checkbox" role="switch" checked> Meldingen per e-mail</label>
+  </article>
+</div>
+<script></script>
+</body>
+</html>

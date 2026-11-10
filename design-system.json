@@ -1,0 +1,69 @@
+{
+  "v": 3,
+  "assetGroups": {
+    "icons": {
+      "files": {},
+      "name": "icons",
+      "order": []
+    },
+    "logo": {
+      "files": {},
+      "name": "logo",
+      "order": []
+    },
+    "notes": {
+      "files": {},
+      "name": "notes",
+      "order": []
+    }
+  },
+  "blobs": {},
+  "createdOnFiles": {
+    "at": "2026-10-13T11:35:09.199Z",
+    "v": 1
+  },
+  "docs": {
+    "readme": "project/README.md",
+    "sections": [
+      "project/github.md",
+      "project/ui_kits/surf-web/README.md"
+    ]
+  },
+  "groups": [
+    "icons",
+    "logo",
+    "notes"
+  ],
+  "layout": "files",
+  "libraries": [
+    {
+      "name": "react",
+      "version": "18"
+    },
+    {
+      "name": "react-dom",
+      "version": "18"
+    },
+    {
+      "name": "oat",
+      "version": "1.0.0",
+      "global": "ot",
+      "file": "components/lib/oat.min.js"
+    },
+    {
+      "name": "surf-theme",
+      "version": "1.0.0",
+      "global": "SURFTheme",
+      "file": "components/lib/surf-theme.js"
+    }
+  ],
+  "namespace": "SURFDesignSystem_019e21",
+  "sections": {},
+  "title": "SURF Design System",
+  "lastChange": {
+    "by": "Maurice Vanderfeesten",
+    "at": "2026-11-10T12:23:31Z",
+    "via": "claude.ai chat",
+    "note": "Added a dark theme (Curve dark values from SURFnet/DesignSystem) and the ThemeToggle component (light/system/dark)"
+  }
+}

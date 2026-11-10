@@ -16,8 +16,7 @@
 }
 @font-face {
   font-family: "Nunito";
-  src: url("fonts/Nunito-Italic-VariableFont_wght.ttf") format("truetype-variations"),
-       url("fonts/Nunito-Italic.ttf") format("truetype");
+  src: url("fonts/Nunito-Italic-VariableFont_wght.ttf") format("truetype-variations");
   font-weight: 200 900; font-style: italic; font-display: swap;
 }
 
@@ -159,9 +158,9 @@
 
   /* ---------- Type scale ---------------------------------------------- */
   /* Headings use Nunito Bold/Extra Bold, tight tracking. */
-  --fs-display: clamp(48px, 6vw, 80px);
-  --fs-h1: clamp(36px, 4vw, 56px);
-  --fs-h2: clamp(28px, 3vw, 40px);
+  --fs-display: clamp(48px, 6vw, 80px); /* @kind font */
+  --fs-h1: clamp(36px, 4vw, 56px); /* @kind font */
+  --fs-h2: clamp(28px, 3vw, 40px); /* @kind font */
   --fs-h3: 24px;
   --fs-h4: 20px;
   --fs-h5: 18px;
@@ -172,10 +171,10 @@
   --fs-caption: 13px;
   --fs-mono:    14px;
 
-  --lh-tight:  1.1;
-  --lh-snug:   1.25;
-  --lh-normal: 1.5;
-  --lh-loose:  1.7;
+  --lh-tight:  1.1; /* @kind font */
+  --lh-snug:   1.25; /* @kind font */
+  --lh-normal: 1.5; /* @kind font */
+  --lh-loose:  1.7; /* @kind font */
 
   --tracking-tight: -0.01em;
   --tracking-normal: 0;
@@ -213,11 +212,11 @@
   --border-thick:  4px;          /* used for the SURF basiskader frame */
 
   /* Motion */
-  --ease-out: cubic-bezier(0.2, 0.7, 0.2, 1);
-  --ease-in-out: cubic-bezier(0.6, 0, 0.4, 1);
-  --dur-fast: 120ms;
-  --dur-base: 220ms;
-  --dur-slow: 380ms;
+  --ease-out: cubic-bezier(0.2, 0.7, 0.2, 1); /* @kind other */
+  --ease-in-out: cubic-bezier(0.6, 0, 0.4, 1); /* @kind other */
+  --dur-fast: 120ms; /* @kind other */
+  --dur-base: 220ms; /* @kind other */
+  --dur-slow: 380ms; /* @kind other */
 }
 
 /* =========================================================================

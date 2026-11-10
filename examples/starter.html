@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SURF Design System starter</title>
+<!-- SURF Design System: theme script first (no flash of the wrong theme), then tokens, Oat + SURF theme, Oat's script. -->
+<script src="../components/lib/surf-theme.js"></script>
+<script>SURFTheme.init()</script>
+<link rel="stylesheet" href="../tokens.css">
+<link rel="stylesheet" href="../components/bundle.css">
+<script src="../components/lib/oat.min.js" defer></script>
+<style>
+  .wrap { max-width: 960px; margin: 0 auto; padding: var(--space-6) var(--space-5); }
+  .top { display: flex; align-items: center; justify-content: space-between; gap: var(--space-4); margin-bottom: var(--space-7); }
+  .logo-light { height: 56px; display: block; }
+  .logo-dark { height: 36px; display: none; }
+  [data-theme="dark"] .logo-light { display: none; }
+  [data-theme="dark"] .logo-dark { display: block; }
+  .stack > * + * { margin-top: var(--space-4); }
+  .row { display: flex; flex-wrap: wrap; gap: var(--space-2); align-items: center; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <a href="#" aria-label="SURF"><img class="logo-light" src="../assets/logo/surf-logo.svg" alt=""><img class="logo-dark" src="../assets/logo/SURF_diap.svg" alt=""></a>
+    <surf-theme-toggle compact></surf-theme-toggle>
+  </header>
+  <main class="stack">
+    <p class="eyebrow">Open Research Information</p>
+    <h1>Samen aanjagen van vernieuwing</h1>
+    <p class="p-lg">Plain semantic HTML: Oat styles it, the SURF tokens colour it, in light and dark.</p>
+    <div class="row">
+      <button>Opslaan</button>
+      <button data-variant="secondary">Annuleren</button>
+      <button class="outline">Meer opties</button>
+    </div>
+    <div role="alert" data-variant="success">Je aanvraag is ontvangen.</div>
+    <article class="card">
+      <header><h3>Thema</h3></header>
+      <p>Kies licht, systeem of donker.</p>
+      <surf-theme-toggle labels="visible"></surf-theme-toggle>
+    </article>
+  </main>
+</div>
+</body>
+</html>

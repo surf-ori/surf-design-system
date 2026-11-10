@@ -1,0 +1,18 @@
+<!-- @dsCard group="Components" height=150 subtitle="Light · system · dark, as a switch or one cycling button" -->
+<!doctype html>
+<html lang="nl">
+<head><meta charset="utf-8"><title>ThemeToggle — preview</title></head>
+<body style="margin:0;padding:24px"><div id="root"></div>
+<script>
+const { ThemeToggle } = window.SURFDesignSystem_019e21;
+const h = React.createElement;
+const row = (label, kid) => h("div", { style: { display: "flex", gap: 16, alignItems: "center", marginBottom: 14 } },
+  h("span", { style: { width: 120, font: "600 13px/1.2 var(--font-body)", color: "var(--fg-3)" } }, label), kid);
+ReactDOM.createRoot(document.getElementById("root")).render(h("div", null,
+  row("Switch", h(ThemeToggle)),
+  row("With labels", h(ThemeToggle, { showLabels: true })),
+  row("Compact", h(ThemeToggle, { compact: true }))
+));
+</script>
+</body>
+</html>
